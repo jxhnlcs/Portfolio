@@ -33,6 +33,12 @@ const Work = () => (
           </Link>
         </ListItem>
         <ListItem>
+          <Meta>Video</Meta>
+          <Link href="https://www.linkedin.com/posts/john-lucas-a23880208_ol%C3%A1-rede-no-dia-2906-apresentei-meu-tcc-activity-7080582167394697216-iDqv?utm_source=share&utm_medium=member_desktop">
+          https://www.linkedin.com/posts/video <ExternalLinkIcon mx="2px" />
+          </Link>
+        </ListItem>
+        <ListItem>
           <Meta>Plataformas</Meta>
           <span>Windows/macOS/Linux/iOS/Android</span>
         </ListItem>

@@ -24,12 +24,12 @@ const Works = () => (
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
           <WorkGridItem id="doopets" title="Doo Pets" thumbnail={thumbDoopets}>
-          Um sistema de gerenciamento de petshop desenvolvido como TCC para o curso de Desenvolvimento de Sistemas do SENAI
+            Um sistema de gerenciamento de petshop desenvolvido como TCC para o curso de Desenvolvimento de Sistemas do SENAI
           </WorkGridItem>
         </Section>
         <Section>
           <WorkGridItem
-            id="walknote"
+            id="tecer"
             title="Tecer Gestão e Aplicativo"
             thumbnail={thumbTecer}
           >
