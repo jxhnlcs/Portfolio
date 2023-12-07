@@ -5,7 +5,7 @@ import { WorkGridItem } from '../components/grid-item'
 
 import thumbDoopets from '../public/images/works/doopets_eyecatch.png'
 import thumbTecer from '../public/images/works/tecer_eyecatch.png'
-import thumbEkko from '../public/images/works/ekko_eyecatch.png'
+import thumbAcougue from '../public/images/works/acougue_eyecatch.png'
 import thumbSheila from '../public/images/works/sheila_eyecatch.png'
 import thumbMargelo from '../public/images/works/margelo_eyecatch.png'
 import thumbModeTokyo from '../public/images/works/modetokyo_eyecatch.png'
@@ -39,11 +39,11 @@ const Works = () => (
 
         <Section delay={0.1}>
           <WorkGridItem
-            id="fourpainters"
+            id="acougue"
             title="Açougue São Roque"
-            thumbnail={thumbEkko}
+            thumbnail={thumbAcougue}
           >
-            Landing Page para a minha startup, a Ekko Sistemas
+            Tela de exibição de valores das carnes destinada aos açougues das filiais da São Roque.
           </WorkGridItem>
         </Section>
         <Section delay={0.1}>
