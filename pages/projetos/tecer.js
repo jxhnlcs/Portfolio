@@ -21,23 +21,23 @@ const Work = () => (
       </P>
       <List ml={4} my={4}>
         <ListItem>
-          <Meta>Platform</Meta>
+          <Meta>Plataformas</Meta>
           <span>Windows/macOS/Linux/iOS/Android</span>
         </ListItem>
         <ListItem>
-          <Meta>Source</Meta>
+          <Meta>Código Web</Meta>
           <Link href="https://github.com/jxhnlcs/docpower-web">
           https://github.com/jxhnlcs/docpower-web <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
-          <Meta>Source</Meta>
+          <Meta>Código Mobile</Meta>
           <Link href="https://github.com/jxhnlcs/docpower-mobile">
           https://github.com/jxhnlcs/docpower-mobile <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
-          <Meta>Stack</Meta>
+          <Meta>Stacks</Meta>
           <span>Vue.js, Node.js, React Native, AWS</span>
         </ListItem>
       </List>

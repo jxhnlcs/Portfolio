@@ -20,14 +20,20 @@ const Work = () => (
       O Doo Pets é um sistema de gerenciamento completo e intuitivo desenvolvido como trabalho de conclusão de curso para o curso de Desenvolvimento de Sistemas do SENAI.
       </P>
       <List ml={4} my={4}>
-        <ListItem>
+      <ListItem>
           <Meta>Website</Meta>
+          <Link href="https://doopets.vercel.app/">
+          https://doopets.vercel.app/ <ExternalLinkIcon mx="2px" />
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Meta>Sistema (Offline)</Meta>
           <Link href="https://doo-pets.vercel.app/">
           https://doo-pets.vercel.app/ <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
-          <Meta>Source</Meta>
+          <Meta>Código</Meta>
           <Link href="https://github.com/jxhnlcs/DooPets">
           https://github.com/jxhnlcs/DooPets <ExternalLinkIcon mx="2px" />
           </Link>

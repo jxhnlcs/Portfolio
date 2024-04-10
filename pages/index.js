@@ -68,7 +68,7 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Tecnologias: React, Next, Vue, Nuxt, Node e Angular!
+        Tecnologias: Vue, Angular, React, Next, Nuxt, Node, Express!
       </Box>
 
       <Section delay={0.1}>
@@ -78,13 +78,13 @@ const Home = () => (
         <Paragraph>
           John é um Desenvolvedor Web que gosta de desenvolver
           vários tipos de soluções e sistemas para quaisquer empresas ou clientes
-          para solucionar problemas da vida real em forma de código. Atualmente ele
+          no intuito de solucionar problemas da vida real em forma de código. Atualmente ele
           vive no Brasil e adora fazer novas conexões para se sentir dentro da comunidade.
         </Paragraph>
         <Box align="center" my={4}>
           <Button
             as={NextLink}
-            href="/works"
+            href="/projetos"
             scroll={false}
             rightIcon={<ChevronRightIcon />}
             colorScheme="teal"
@@ -108,9 +108,12 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2023</BioYear>
-          Concluiu o curso de Desenvolvimento de Sistemas SENAI e ingressou no
-          curso superior em Análise e Desenvolvimento de Sistemas na UNIFAN -
+          Ingressou no curso superior em Análise e Desenvolvimento de Sistemas na UNIFAN -
           Centro Universitário Nobre
+        </BioSection>
+        <BioSection>
+          <BioYear>2023</BioYear>
+          Concluiu o curso de Desenvolvimento de Sistemas SENAI
         </BioSection>
         <BioSection>
           <BioYear>2021</BioYear>

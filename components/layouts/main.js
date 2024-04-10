@@ -18,7 +18,6 @@ const Main = ({ children, router }) => {
         <meta name="twitter:site" content="@jxhnlcs" />
         <meta name="twitter:creator" content="@jxhnlcs" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://www.craftz.dog/card.png" />
         <title>John Lucas - Portfolio</title>
       </Head>
 
