@@ -11,7 +11,7 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Work = () => (
-  <Layout title="Doo Pets">
+  <Layout title="DooPets">
     <Container display={{ md: 'column' }} marginTop={{ md: 5 }}>
       <Title>
         Doo Pets <Badge>2023</Badge>
