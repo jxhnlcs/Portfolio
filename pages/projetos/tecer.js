@@ -14,10 +14,10 @@ const Work = () => (
   <Layout title="Tecer">
     <Container Container display={{ md: 'column' }} marginTop={{ md: 5 }}>
       <Title>
-        Tecer Gestão <Badge>2023</Badge>
+        Tecer Gestão e Aplicativo <Badge>2023</Badge>
       </Title>
       <P>
-        Esse projeto foi fruto do meu primeiro freelancer desenvolvido para a empresa Tecer, no qual desenvolvi um sistema de gestão de funcionários e clientes e também e um aplicativo de consulta de documentos para os clientes
+        Esse projeto foi fruto do meu primeiro freelancer desenvolvido para a empresa Tecer, no qual desenvolvi um sistema de gestão de funcionários e clientes e também um aplicativo de consulta de documentos para os clientes
       </P>
       <List ml={4} my={4}>
         <ListItem>

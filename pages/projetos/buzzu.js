@@ -17,7 +17,7 @@ const Work = () => (
         Buzzu <Badge>2023</Badge>
       </Title>
       <P>
-        O Buzzu é uma ideia que foi pensada para o hackathon cidades inteligentes Feira de Santana realizado pelo SEBRAR. o Buzzu é um Aplicativo de Transporte Público que tem como objetivo ajudar os cidadões da cidade a localizar os ônibus e pontos de ônibus para chegar aos seus destinos e acompanhar as viagens
+        O Buzzu é uma ideia que foi pensada para o hackathon cidades inteligentes Feira de Santana realizado pelo SEBRAE. o Buzzu é um Aplicativo de Transporte Público que tem como objetivo ajudar os cidadões da cidade a localizar os ônibus e pontos de ônibus para chegar aos seus destinos e acompanhar as viagens
       </P>
 
       <List ml={4} my={4}>

@@ -15,7 +15,7 @@ const Work = () => (
         Açougue São Roque <Badge>2023</Badge>
       </Title>
       <P>
-        Na minha curta passagem pelo Grupo São Roque desempenhei um papel fundamental no desenvolvimento da solução da tela de exibição de valores das carnes destinada aos açougues das filiais da São Roque.
+        Na minha curta passagem pelo Grupo São Roque desempenhei um papel fundamental no desenvolvimento da solução da tela de exibição de valores das carnes destinada aos açougues das filiais da São Roque
       </P>
       <List ml={4} my={4}>
         <ListItem>
