@@ -49,8 +49,8 @@ const Home = () => (
             borderRadius="full"
             overflow="hidden"
           >
-            <ProfileImage
-              src="/images/john.jpeg"
+            <Image
+              src="/images/john-img.jpeg"
               alt="Profile image"
               borderRadius="full"
               width="100"
@@ -99,7 +99,7 @@ const Home = () => (
           Bio
         </Heading>
         <BioSection>
-          <BioYear>Atual</BioYear>
+          <BioYear style={{marginRight: '13px' }}>Atual</BioYear>
           Desenvolvedor Front-End Pleno na AgMind
         </BioSection>
         <BioSection>
