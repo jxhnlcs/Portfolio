@@ -27,13 +27,13 @@ const Work = () => (
         <ListItem>
           <Meta>Código Web</Meta>
           <Link href="https://github.com/jxhnlcs/docpower-web">
-          https://github.com/jxhnlcs/docpower-web <ExternalLinkIcon mx="2px" />
+            https://github.com/jxhnlcs/docpower-web <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
           <Meta>Código Mobile</Meta>
           <Link href="https://github.com/jxhnlcs/docpower-mobile">
-          https://github.com/jxhnlcs/docpower-mobile <ExternalLinkIcon mx="2px" />
+            https://github.com/jxhnlcs/docpower-mobile <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>

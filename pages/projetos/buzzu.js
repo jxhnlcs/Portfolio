@@ -38,7 +38,7 @@ const Work = () => (
         <ListItem>
           <Meta>Código</Meta>
           <Link href="https://github.com/jxhnlcs/buzzu_app">
-          https://github.com/jxhnlcs/buzzu_app <ExternalLinkIcon mx="2px" />
+            https://github.com/jxhnlcs/buzzu_app <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
       </List>
