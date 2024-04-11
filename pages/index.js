@@ -7,8 +7,7 @@ import {
   Button,
   List,
   ListItem,
-  useColorModeValue,
-  chakra
+  useColorModeValue
 } from '@chakra-ui/react'
 import { ChevronRightIcon} from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
