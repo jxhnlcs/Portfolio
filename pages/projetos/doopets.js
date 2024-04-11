@@ -17,7 +17,7 @@ const Work = () => (
         Doo Pets <Badge>2023</Badge>
       </Title>
       <P>
-        O Doo Pets é um sistema de gerenciamento completo e intuitivo de petshop desenvolvido como trabalho de conclusão de curso para o curso de Desenvolvimento de Sistemas do SENAI. No sistema é possível fazer agendamentos de banhos, tosas ou outros serviços destinados aos pets dos clientes, além de um frente de caixa dinâmico que aceita várias formas de pagamento, para finalizar tem um CRUDS para gerenciamento completo de clientes, funcionários, pets, estoque, fornecedores, serviços e produtos
+        O Doo Pets é um sistema de gerenciamento completo e intuitivo de petshop desenvolvido como trabalho de conclusão de curso para o curso de Desenvolvimento de Sistemas do SENAI. No sistema é possível fazer agendamentos de banhos, tosas ou outros serviços destinados aos pets dos clientes, além de um frente de caixa dinâmico que aceita várias formas de pagamento. Para finalizar o sistema tem CRUDS para gerenciamento completo de clientes, funcionários, pets, estoque, fornecedores, serviços e produtos
       </P>
       <List ml={4} my={4}>
         <ListItem>
