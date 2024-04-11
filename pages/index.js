@@ -18,10 +18,6 @@ import Section from '../components/section'
 import {IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import Image from 'next/image'
 
-const ProfileImage = chakra(Image, {
-  shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
-})
-
 const Home = () => (
   <Layout>
     <Container>
