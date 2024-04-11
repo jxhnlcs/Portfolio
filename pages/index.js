@@ -99,7 +99,7 @@ const Home = () => (
         </BioSection>
         <BioSection>
           <BioYear>2023</BioYear>
-          Desenvolvedor Full Stack no Grupo São Roque - Set/Nov
+          Desenvolvedor Full Stack no Grupo São Roque
         </BioSection>
         <BioSection>
           <BioYear>2023</BioYear>
