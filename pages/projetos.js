@@ -6,6 +6,7 @@ import { WorkGridItem } from '../components/grid-item'
 import thumbDoopets from '../public/images/works/doopets_eyecatch.png'
 import thumbTecer from '../public/images/works/tecer_eyecatch.png'
 import thumbAcougue from '../public/images/works/acougue_eyecatch.png'
+import thumbProsel from '../public/images/works/prosel_eyecatch.png'
 import thumbBuzzu from '../public/images/works/buzzu_eyecatch.png'
 
 const Projetos = () => (
@@ -44,6 +45,12 @@ const Projetos = () => (
         <Section delay={0.3}>
           <WorkGridItem id="doopets" title="Doo Pets" thumbnail={thumbDoopets}>
             Um sistema de gerenciamento de petshop desenvolvido como TCC para o curso de Desenvolvimento de Sistemas do SENAI
+          </WorkGridItem>
+        </Section>
+
+        <Section delay={0.3}>
+          <WorkGridItem id="prosel" title="Prosel" thumbnail={thumbProsel}>
+            Um sistema que possa facilitar e otimizar as atividades dos maqueiros, responsáveis pelo transporte dos pacientes em um Hospital
           </WorkGridItem>
         </Section>
       </SimpleGrid>
