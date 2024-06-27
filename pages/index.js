@@ -41,13 +41,13 @@ const Home = () => (
             w="100px"
             h="100px"
             display="inline-block"
-            borderradius="full"
+            borderRadius="full"
             overflow="hidden"
           >
             <Image
               src="/images/john-img.png"
               alt="Profile image"
-              borderradius="full"
+              borderRadius="full"
               width="100"
               height="100"
             />
@@ -56,7 +56,7 @@ const Home = () => (
       </Box>
 
       <Box
-        borderradius="lg"
+        borderRadius="lg"
         mb={6}
         p={3}
         textAlign="center"
