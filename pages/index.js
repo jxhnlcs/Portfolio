@@ -94,7 +94,11 @@ const Home = () => (
           Bio
         </Heading>
         <BioSection>
-          <BioYear style={{marginRight: '13px' }}>Atual</BioYear>
+          <BioYear>2024</BioYear>
+          Desenvolvedor Front-End Pleno na WeMind
+        </BioSection>  
+        <BioSection>
+          <BioYear>2023-2024</BioYear>
           Desenvolvedor Front-End Pleno na AgMind
         </BioSection>
         <BioSection>
