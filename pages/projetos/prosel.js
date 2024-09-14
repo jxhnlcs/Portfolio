@@ -18,16 +18,6 @@ const Work = () => (
       </Title>
       <P>
         O Hospital Geral Clériston Andrade reconhece a importância de aprimorar o transporte de pacientes dentro da instituição, visando oferecer um serviço mais eficiente e seguro aos usuários. Para atender a essa necessidade, surge a demanda por um sistema que possa facilitar e otimizar as atividades dos maqueiros, responsáveis pelo transporte dos pacientes
-        <br></br>
-        <br></br>
-        Usuários:
-        <br></br>
-        <br></br>
-        Usuário: admin | Senha: 123
-        <br></br>
-        Usuário: rafa | Senha: 123
-        <br></br>
-        Usuário: pietra | Senha: 123
       </P>
       <List ml={4} my={4}>
         <ListItem>
@@ -39,7 +29,7 @@ const Work = () => (
           <span>Vue.js, Node.js, Express, Docker, MySQL</span>
         </ListItem>
         <ListItem>
-          <Meta>Sistema (Online)</Meta>
+          <Meta>Sistema (Offline)</Meta>
           <Link href="https://prosel.vercel.app">
           https://prosel.vercel.app/ <ExternalLinkIcon mx="2px" />
           </Link>

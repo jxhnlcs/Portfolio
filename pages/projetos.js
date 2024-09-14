@@ -8,6 +8,7 @@ import thumbTecer from '../public/images/works/tecer_eyecatch.png'
 import thumbAcougue from '../public/images/works/acougue_eyecatch.png'
 import thumbProsel from '../public/images/works/prosel_eyecatch.png'
 import thumbBuzzu from '../public/images/works/buzzu_eyecatch.png'
+import thumbRekomendo from '../public/images/works/rekomendo_eyecatch.png'
 
 const Projetos = () => (
   <Layout title="Projetos">
@@ -17,12 +18,15 @@ const Projetos = () => (
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
+
+      <Section>
+          <WorkGridItem id="rekomendo" title="Rekomendo" thumbnail={thumbRekomendo}>
+            Aplicativo para facilitar o encontro de prestadores de serviços na sua região
+          </WorkGridItem>
+        </Section>
+
         <Section>
-          <WorkGridItem
-            id="tecer"
-            title="Tecer Gestão e Aplicativo"
-            thumbnail={thumbTecer}
-          >
+          <WorkGridItem id="tecer" title="Tecer Gestão e Aplicativo" thumbnail={thumbTecer}>
             Sistema de gestão e aplicativo com o uso destinado aos clientes para a empresa Tecer Consultoria
           </WorkGridItem>
         </Section>
