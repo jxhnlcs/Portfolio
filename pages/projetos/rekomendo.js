@@ -29,7 +29,7 @@ const Work = () => (
         <ListItem>
           <Meta>Sistema (Online)</Meta>
           <Link href="https://rekomendo.com.br/landingpage">
-            https://rekomendo.com.br/home <ExternalLinkIcon mx="2px" />
+            https://rekomendo.com.br/landingpage <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
         <ListItem>
