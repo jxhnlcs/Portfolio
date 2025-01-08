@@ -27,7 +27,7 @@ const Work = () => (
           </Link>
         </ListItem>
         <ListItem>
-          <Meta>Sistema (Offline)</Meta>
+          <Meta>Sistema (Online)</Meta>
           <Link href="https://doo-pets.vercel.app/">
             https://doo-pets.vercel.app/ <ExternalLinkIcon mx="2px" />
           </Link>
