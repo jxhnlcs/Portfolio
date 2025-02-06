@@ -1,81 +1,85 @@
-import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
-import Layout from '../components/layouts/article'
-import Section from '../components/section'
-import { WorkGridItem } from '../components/grid-item'
+import { useTranslation } from 'react-i18next';
+import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react';
+import Layout from '../components/layouts/article';
+import Section from '../components/section';
+import { WorkGridItem } from '../components/grid-item';
 
-import thumbDoopets from '../public/images/works/doopets_eyecatch.png'
-import thumbTecer from '../public/images/works/tecer_eyecatch.png'
-import thumbAcougue from '../public/images/works/acougue_eyecatch.png'
-import thumbProsel from '../public/images/works/prosel_eyecatch.png'
-import thumbBuzzu from '../public/images/works/buzzu_eyecatch.png'
-import thumbRekomendo from '../public/images/works/rekomendo_eyecatch.png'
+import thumbDoopets from '../public/images/works/doopets_eyecatch.png';
+import thumbTecer from '../public/images/works/tecer_eyecatch.png';
+import thumbAcougue from '../public/images/works/acougue_eyecatch.png';
+import thumbProsel from '../public/images/works/prosel_eyecatch.png';
+import thumbBuzzu from '../public/images/works/buzzu_eyecatch.png';
+import thumbRekomendo from '../public/images/works/rekomendo_eyecatch.png';
 
-const Projetos = () => (
-  <Layout title="Projetos">
-    <Container display={{ md: 'column' }} marginTop={{ md: 10 }}>
-      <Heading as="h3" fontSize={20} mb={4}>
-        Jobs
-      </Heading>
+const Projetos = () => {
+  const { t } = useTranslation(); // Hook para tradução
 
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
-
-      <Section>
-          <WorkGridItem id="rekomendo" title="Rekomendo" thumbnail={thumbRekomendo}>
-            Aplicativo para facilitar o encontro de prestadores de serviços na sua região
-          </WorkGridItem>
-        </Section>
-
-        <Section>
-          <WorkGridItem id="tecer" title="Tecer Gestão e Aplicativo" thumbnail={thumbTecer}>
-            Sistema de gestão e aplicativo com o uso destinado aos clientes para a empresa Tecer Consultoria
-          </WorkGridItem>
-        </Section>
-
-        <Section delay={0.1}>
-          <WorkGridItem id="acougue" title="Açougue São Roque" thumbnail={thumbAcougue}>
-            Tela de exibição de valores das carnes destinada aos açougues das filiais da São Roque.
-          </WorkGridItem>
-        </Section>
-      </SimpleGrid>
-
-      <Section delay={0.2}>
-        <Divider my={6} />
+  return (
+    <Layout title={t("projects_title")}>
+      <Container display={{ md: 'column' }} marginTop={{ md: 10 }}>
         <Heading as="h3" fontSize={20} mb={4}>
-          Pessoais
+          {t("projects_jobs")}
         </Heading>
-      </Section>
 
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section delay={0.3}>
-          <WorkGridItem id="doopets" title="Doo Pets" thumbnail={thumbDoopets}>
-            Um sistema de gerenciamento de petshop desenvolvido como TCC para o curso de Desenvolvimento de Sistemas do SENAI
-          </WorkGridItem>
+        <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          <Section>
+            <WorkGridItem id="rekomendo" title="Rekomendo" thumbnail={thumbRekomendo}>
+              {t("projects_rekomendo_desc")}
+            </WorkGridItem>
+          </Section>
+
+          <Section>
+            <WorkGridItem id="tecer" title="Tecer Gestão e Aplicativo" thumbnail={thumbTecer}>
+              {t("projects_tecer_desc")}
+            </WorkGridItem>
+          </Section>
+
+          <Section delay={0.1}>
+            <WorkGridItem id="acougue" title="Açougue São Roque" thumbnail={thumbAcougue}>
+              {t("projects_acougue_desc")}
+            </WorkGridItem>
+          </Section>
+        </SimpleGrid>
+
+        <Section delay={0.2}>
+          <Divider my={6} />
+          <Heading as="h3" fontSize={20} mb={4}>
+            {t("projects_personal")}
+          </Heading>
         </Section>
 
-        <Section delay={0.3}>
-          <WorkGridItem id="prosel" title="Prosel" thumbnail={thumbProsel}>
-            Um sistema que possa facilitar e otimizar as atividades dos maqueiros, responsáveis pelo transporte dos pacientes em um Hospital
-          </WorkGridItem>
+        <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          <Section delay={0.3}>
+            <WorkGridItem id="doopets" title="Doo Pets" thumbnail={thumbDoopets}>
+              {t("projects_doopets_desc")}
+            </WorkGridItem>
+          </Section>
+
+          <Section delay={0.3}>
+            <WorkGridItem id="prosel" title="Prosel" thumbnail={thumbProsel}>
+              {t("projects_prosel_desc")}
+            </WorkGridItem>
+          </Section>
+        </SimpleGrid>
+
+        <Section delay={0.4}>
+          <Divider my={6} />
+          <Heading as="h3" fontSize={20} mb={4}>
+            {t("projects_collaborations")}
+          </Heading>
         </Section>
-      </SimpleGrid>
 
-      <Section delay={0.4}>
-        <Divider my={6} />
-        <Heading as="h3" fontSize={20} mb={4}>
-          Colaborações
-        </Heading>
-      </Section>
+        <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          <Section delay={0.5}>
+            <WorkGridItem id="buzzu" thumbnail={thumbBuzzu} title="Buzzu">
+              {t("projects_buzzu_desc")}
+            </WorkGridItem>
+          </Section>
+        </SimpleGrid>
+      </Container>
+    </Layout>
+  );
+};
 
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section delay={0.5}>
-          <WorkGridItem id="buzzu" thumbnail={thumbBuzzu} title="Buzzu">
-            Aplicativo de Transporte Público
-          </WorkGridItem>
-        </Section>
-      </SimpleGrid>
-    </Container>
-  </Layout>
-)
-
-export default Projetos
-export { getServerSideProps } from '../components/chakra'
+export default Projetos;
+export { getServerSideProps } from '../components/chakra';

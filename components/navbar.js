@@ -1,6 +1,6 @@
-import { forwardRef } from 'react'
-import Logo from './logo'
-import NextLink from 'next/link'
+import { forwardRef } from 'react';
+import Logo from './logo';
+import NextLink from 'next/link';
 import {
   Container,
   Box,
@@ -13,15 +13,18 @@ import {
   MenuList,
   MenuButton,
   IconButton,
-  useColorModeValue
-} from '@chakra-ui/react'
-import { HamburgerIcon } from '@chakra-ui/icons'
-import ThemeToggleButton from './theme-toggle-button'
-import { IoLogoGithub } from 'react-icons/io5'
+  useColorModeValue,
+  Button
+} from '@chakra-ui/react';
+import { HamburgerIcon } from '@chakra-ui/icons';
+import ThemeToggleButton from './theme-toggle-button';
+import { useTranslation } from 'react-i18next';
+import { MdLanguage } from 'react-icons/md';
+import { IoLogoGithub } from 'react-icons/io5';
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
-  const active = path === href
-  const inactiveColor = useColorModeValue('gray.800', 'whiteAlpha.900')
+  const active = path === href;
+  const inactiveColor = useColorModeValue('gray.800', 'whiteAlpha.900');
   return (
     <Link
       as={NextLink}
@@ -35,15 +38,21 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
     >
       {children}
     </Link>
-  )
-}
+  );
+};
 
 const MenuLink = forwardRef((props, ref) => (
   <Link ref={ref} as={NextLink} {...props} />
-))
+));
 
 const Navbar = props => {
-  const { path } = props
+  const { path } = props;
+  const { t, i18n } = useTranslation(); // Hook para tradução
+
+  const toggleLanguage = () => {
+    const newLang = i18n.language === 'pt' ? 'en' : 'pt';
+    i18n.changeLanguage(newLang);
+  };
 
   return (
     <Box
@@ -78,7 +87,7 @@ const Navbar = props => {
           mt={{ base: 4, md: 0 }}
         >
           <LinkItem href="/projetos" path={path}>
-            Projetos
+            {t("projects")}
           </LinkItem>
           <LinkItem
             target="_blank"
@@ -90,12 +99,24 @@ const Navbar = props => {
             pl={2}
           >
             <IoLogoGithub />
-            Código
+            {t("code")}
           </LinkItem>
         </Stack>
 
         <Box flex={1} align="right">
           <ThemeToggleButton />
+
+          {/* Botão de troca de idioma com bandeiras */}
+          <Button
+            ml={2}
+            leftIcon={i18n.language === 'pt' ? '🇧🇷' : '🇺🇸'}
+            rightIcon={<MdLanguage />}
+            variant="outline"
+            aria-label="Trocar idioma"
+            onClick={toggleLanguage}
+          >
+            {i18n.language.toUpperCase()} {/* Exibe "PT" ou "EN" */}
+          </Button>
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
@@ -107,10 +128,10 @@ const Navbar = props => {
               />
               <MenuList>
                 <MenuItem as={MenuLink} href="/">
-                  Sobre
+                  {t("about")}
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/projetos">
-                  Projetos
+                  {t("projects")}
                 </MenuItem>
               </MenuList>
             </Menu>
@@ -118,7 +139,7 @@ const Navbar = props => {
         </Box>
       </Container>
     </Box>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

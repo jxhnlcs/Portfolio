@@ -1,4 +1,5 @@
-import NextLink from 'next/link'
+import NextLink from 'next/link';
+import { useTranslation } from 'react-i18next';
 import {
   Link,
   Container,
@@ -8,161 +9,150 @@ import {
   List,
   ListItem,
   useColorModeValue
-} from '@chakra-ui/react'
-import { ChevronRightIcon} from '@chakra-ui/icons'
-import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from '../components/bio'
-import Layout from '../components/layouts/article'
-import Section from '../components/section'
-import {IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
-import Image from 'next/image'
+} from '@chakra-ui/react';
+import { ChevronRightIcon } from '@chakra-ui/icons';
+import Paragraph from '../components/paragraph';
+import { BioSection, BioYear } from '../components/bio';
+import Layout from '../components/layouts/article';
+import Section from '../components/section';
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
+import Image from 'next/image';
 
-const Home = () => (
-  <Layout>
-    <Container>
+const Home = () => {
+  const { t } = useTranslation(); // Obtém o hook para tradução
 
-      <Box display={{ md: 'flex' }} marginTop={{ md: 10 }}>
-        <Box flexGrow={1}>
-          <Heading as="h2" variant="page-title">
-            John Lucas
-          </Heading>
-          <p>Desenvolvedor Web</p>
-        </Box>
-        <Box
-          flexShrink={0}
-          mt={{ base: 4, md: 0 }}
-          ml={{ md: 6 }}
-          textAlign="center"
-        >
+  return (
+    <Layout>
+      <Container>
+        <Box display={{ md: 'flex' }} marginTop={{ md: 10 }}>
+          <Box flexGrow={1}>
+            <Heading as="h2" variant="page-title">
+              John Lucas
+            </Heading>
+            <p>{t("job_title")}</p>
+          </Box>
           <Box
-            borderColor="whiteAlpha.800"
-            borderWidth={2}
-            borderStyle="solid"
-            w="100px"
-            h="100px"
-            display="inline-block"
-            borderRadius="full"
-            overflow="hidden"
+            flexShrink={0}
+            mt={{ base: 4, md: 0 }}
+            ml={{ md: 6 }}
+            textAlign="center"
           >
-            <Image
-              src="/images/john-user.png"
-              alt="Profile image"
+            <Box
+              borderColor="whiteAlpha.800"
+              borderWidth={2}
+              borderStyle="solid"
+              w="100px"
+              h="100px"
+              display="inline-block"
               borderRadius="full"
-              width="100"
-              height="100"
-            />
+              overflow="hidden"
+            >
+              <Image
+                src="/images/john-user.png"
+                alt="Profile image"
+                width={100}
+                height={100}
+              />
+            </Box>
           </Box>
         </Box>
-      </Box>
 
-      <Box
-        borderRadius="lg"
-        mb={6}
-        p={3}
-        textAlign="center"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-        css={{ backdropFilter: 'blur(10px)' }}
-      >
-        Tecnologias: Vue, Angular, React, Next, Nuxt, Node, Express!
-      </Box>
-
-      <Section delay={0.1}>
-        <Heading as="h3" variant="section-title">
-          Resumo
-        </Heading>
-        <Paragraph>
-          John é um Desenvolvedor Web que gosta de desenvolver
-          vários tipos de soluções e sistemas para quaisquer empresas ou clientes
-          no intuito de solucionar problemas da vida real em forma de código. Atualmente ele
-          vive no Brasil e adora fazer novas conexões para se sentir dentro da comunidade.
-        </Paragraph>
-        <Box align="center" my={4}>
-          <Button
-            as={NextLink}
-            href="/projetos"
-            scroll={false}
-            rightIcon={<ChevronRightIcon />}
-            colorScheme="teal"
-          >
-            Meus projetos
-          </Button>
+        <Box
+          borderRadius="lg"
+          mb={6}
+          p={3}
+          textAlign="center"
+          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+          css={{ backdropFilter: 'blur(10px)' }}
+        >
+          {t("technologies")}
         </Box>
-      </Section>
 
-      <Section delay={0.2}>
-        <Heading as="h3" variant="section-title">
-          Bio
-        </Heading>
-        <BioSection>
-          <BioYear style={{marginRight: '13px' }}>Atual</BioYear>
-          Desenvolvedor Front-End Pleno na WeMind
-        </BioSection>  
-        <BioSection>
-          <BioYear>2024</BioYear>
-          Desenvolvedor Front-End Pleno na AgMind
-        </BioSection>
-        <BioSection>
-          <BioYear>2023</BioYear>
-          Desenvolvedor Full Stack no Grupo São Roque
-        </BioSection>
-        <BioSection>
-          <BioYear>2023</BioYear>
-          Ingressou no curso superior em Análise e Desenvolvimento de Sistemas na UNIFAN -
-          Centro Universitário Nobre
-        </BioSection>
-        <BioSection>
-          <BioYear>2023</BioYear>
-          Concluiu o curso de Desenvolvimento de Sistemas SENAI
-        </BioSection>
-        <BioSection>
-          <BioYear>2021</BioYear>
-          Ingressou no curso técnico de Desenvolvimento de Sistemas SENAI.
-        </BioSection>
-      </Section>
+        <Section delay={0.1}>
+          <Heading as="h3" variant="section-title">
+            {t("summary")}
+          </Heading>
+          <Paragraph>
+            {t("bio_description")}
+          </Paragraph>
+          <Box align="center" my={4}>
+            <Button
+              as={NextLink}
+              href="/projetos"
+              scroll={false}
+              rightIcon={<ChevronRightIcon />}
+              colorScheme="teal"
+            >
+              {t("my_projects")}
+            </Button>
+          </Box>
+        </Section>
 
-      <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          ♥
-        </Heading>
-        <Paragraph>
-          Anime, Música, Jogos, Piano, Mangá e Gatos
-        </Paragraph>
-      </Section>
+        <Section delay={0.2}>
+          <Heading as="h3" variant="section-title">
+            {t("bio")}
+          </Heading>
+          <BioSection>
+            <BioYear style={{ marginRight: '13px' }}>{t("current")}</BioYear>
+            {t("job_current")}
+          </BioSection>
+          <BioSection>
+            <BioYear>2024</BioYear>
+            {t("job_2024")}
+          </BioSection>
+          <BioSection>
+            <BioYear>2023</BioYear>
+            {t("job_2023")}
+          </BioSection>
+          <BioSection>
+            <BioYear>2023</BioYear>
+            {t("education_university")}
+          </BioSection>
+          <BioSection>
+            <BioYear>2023</BioYear>
+            {t("education_senai")}
+          </BioSection>
+          <BioSection>
+            <BioYear>2021</BioYear>
+            {t("education_technical")}
+          </BioSection>
+        </Section>
 
-      <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          Minhas redes
-        </Heading>
-        <List>
-          <ListItem>
-            <Link href="https://github.com/jxhnlcs" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoGithub />}
-              >
-                @jxhnlcs
-              </Button>
-            </Link>
-          </ListItem>
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            ♥
+          </Heading>
+          <Paragraph>
+            {t("hobbies")}
+          </Paragraph>
+        </Section>
 
-          <ListItem>
-            <Link href="https://www.linkedin.com/in/john-lucas-a23880208/" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoLinkedin />}
-              >
-                John Lucas
-              </Button>
-            </Link>
-          </ListItem>
-        </List>
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            {t("my_networks")}
+          </Heading>
+          <List>
+            <ListItem>
+              <Link href="https://github.com/jxhnlcs" target="_blank">
+                <Button variant="ghost" colorScheme="teal" leftIcon={<IoLogoGithub />}>
+                  @jxhnlcs
+                </Button>
+              </Link>
+            </ListItem>
 
-      </Section>
-    </Container>
-  </Layout>
-)
+            <ListItem>
+              <Link href="https://www.linkedin.com/in/john-lucas-a23880208/" target="_blank">
+                <Button variant="ghost" colorScheme="teal" leftIcon={<IoLogoLinkedin />}>
+                  John Lucas
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
+        </Section>
+      </Container>
+    </Layout>
+  );
+};
 
-export default Home
-export { getServerSideProps } from '../components/chakra'
+export default Home;
+export { getServerSideProps } from '../components/chakra';
