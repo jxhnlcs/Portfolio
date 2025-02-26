@@ -112,6 +112,45 @@ i18n.use(initReactI18next).init({
         "stacks": "Stacks",
         "work_rekomendo_online_system": "Online System",
 
+        // Work Experience
+
+        "work_experience": "Work Experience",
+        "job_wemind_title": "Mid-Level Frontend Developer",
+        "job_wemind_company": "WeMind",
+        "job_wemind_period": "Nov 2023 - Present",
+        "job_wemind_location": "São Paulo, Brazil · Remote",
+        "job_wemind_description": "I play a key role in creating and maintaining components for AgMind and Influlens projects. I am responsible for keeping the Frontend version up to date in production and integrating with the API.",
+        "job_wemind_skills": "Angular, Ionic, TypeScript, REST API",
+
+        "job_sao_roque_title": "Full Stack Developer",
+        "job_sao_roque_company": "Grupo São Roque",
+        "job_sao_roque_period": "Sep 2023 - Nov 2023 · 3 months",
+        "job_sao_roque_location": "Feira de Santana, Bahia, Brazil · On-site",
+        "job_sao_roque_description": "I played a key role in developing solutions for the company, including creating a price display screen for butcher shops in São Roque branches. Additionally, I led the development of a meal management system for São Roque agencies, which involved generating QR Code cards and developing QR Code readers for transaction validation. These solutions allowed the HR department to have better control over meal-related operations, ensuring efficient and transparent management.",
+        "job_sao_roque_skills": "Problem Solving, Solution Implementation, Figma (Software), Vue.js, GitHub, Coding Standards, MySQL, TypeScript, Node.js, Oracle SQL Developer",
+
+        // Education
+
+        "education": "Education",
+        "education_unifan_title": "Bachelor’s in Software Development",
+        "education_unifan_institution": "UNIFAN - Nobre University Center",
+        "education_unifan_period": "Jul 2023 - Dec 2025",
+        "education_unifan_description": "The Software Development course trains professionals capable of developing, analyzing, designing, implementing, and updating information systems for various industries. By the end of the course, graduates will be qualified to create IT systems, with expertise in multiple programming languages and operational frameworks.",
+        "education_unifan_skills": "Software Engineering, DevOps, Databases, Algorithms, Cloud Computing",
+
+        "education_senai_title": "Technical Degree in Software Development",
+        "education_senai_institution": "SENAI CIMATEC",
+        "education_senai_period": "Feb 2022 - Jun 2023",
+        "education_senai_description": "The course trains technical professionals in Software Development, meeting the market demand for skilled programmers and software developers with the necessary technical and technological knowledge to keep up with industry evolution.",
+        "education_senai_skills": "Team Leadership, CSS, Software Design Patterns, Python, GitHub, Figma (Software), JavaScript, SQL, REST API",
+
+        "education_opera_title": "English as a Second Language",
+        "education_opera_institution": "Opera Idiomas",
+        "education_opera_period": "Jan 2021 - Dec 2023",
+        "education_opera_description": "Developed the ability to communicate fluently in English, discuss almost any topic, and understand spoken language easily. Gained the skill to watch movies and series in English without subtitles and follow conversations with ease.",
+        "education_opera_skills": "B2 English Level"
+
+
       }
     },
     pt: {
@@ -223,6 +262,43 @@ i18n.use(initReactI18next).init({
         "stacks": "Stacks",
         "work_rekomendo_online_system": "Sistema (Online)",
 
+        // Work Experience
+
+        "work_experience": "Experiência Profissional",
+        "job_wemind_title": "Desenvolvedor Front-End Pleno",
+        "job_wemind_company": "WeMind",
+        "job_wemind_period": "Nov de 2023 - o momento",
+        "job_wemind_location": "São Paulo, Brasil · Remoto",
+        "job_wemind_description": "Desempenho um papel fundamental na criação e manutenção de componentes dos projetos AgMind e Influlens, sou responsável por manter a versão Front-End atualizada em produção e também atuo na integração com a API.",
+        "job_wemind_skills": "Angular, Ionic, TypeScript, API REST",
+
+        "job_sao_roque_title": "Desenvolvedor Full Stack",
+        "job_sao_roque_company": "Grupo São Roque",
+        "job_sao_roque_period": "Set de 2023 - Nov de 2023 · 3 meses",
+        "job_sao_roque_location": "Feira de Santana, Bahia, Brasil · Presencial",
+        "job_sao_roque_description": "Desenvolvi soluções para a empresa, incluindo uma tela para exibição de valores das carnes nos açougues das filiais e um sistema de gerenciamento de refeições com QR Code.",
+        "job_sao_roque_skills": "Vue.js, Node.js, MySQL, Oracle SQL Developer, TypeScript, GitHub, Figma",
+
+        // Education
+
+        "education": "Formação Acadêmica",
+        "education_unifan_title": "Graduação em Análise e Desenvolvimento de Sistemas",
+        "education_unifan_institution": "UNIFAN - Centro Universitário Nobre",
+        "education_unifan_period": "Jul de 2023 - Dez de 2025",
+        "education_unifan_description": "O curso forma profissionais para desenvolver e atualizar sistemas de informação, abrangendo diversas linguagens de programação.",
+        "education_unifan_skills": "Engenharia de Software, DevOps, Banco de Dados, Algoritmos, Computação em Nuvem",
+
+        "education_senai_title": "Ensino Técnico em Desenvolvimento de Sistemas",
+        "education_senai_institution": "SENAI CIMATEC",
+        "education_senai_period": "Fev de 2022 - Jun de 2023",
+        "education_senai_description": "O curso prepara profissionais para atuar no desenvolvimento de software e programação.",
+        "education_senai_skills": "Liderança, CSS, Padrões de Projeto, Python, GitHub, Figma, JavaScript, SQL, API REST",
+
+        "education_opera_title": "Ensino de Inglês como Segundo Idioma",
+        "education_opera_institution": "Opera Idiomas",
+        "education_opera_period": "Jan de 2021 - Dez de 2023",
+        "education_opera_description": "Curso focado na fluência e compreensão total da língua inglesa.",
+        "education_opera_skills": "Inglês Nível B2"
 
       }
     }
