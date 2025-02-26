@@ -175,7 +175,8 @@ const Home = () => {
                     <Text fontSize="sm" color="gray.400">{t("education_unifan_institution")}</Text>
                   </Box>
                 </Box>
-                <Text mb={2} fontSize="sm" mt={2}>{t("education_unifan_period")}</Text>
+                <Text fontSize="sm" mt={2}>{t("education_unifan_period")}</Text>
+                <Text mb={2} fontSize="sm">{t("job_sao_roque_location")}</Text>
                 <Paragraph>{t("education_unifan_description")}</Paragraph>
                 <Text fontSize="sm" fontWeight="bold" mt={2}>{t("Skills")}:</Text>
                 <Text fontSize="sm">{t("education_unifan_skills")}</Text>
@@ -191,7 +192,8 @@ const Home = () => {
                     <Text fontSize="sm" color="gray.400">{t("education_senai_institution")}</Text>
                   </Box>
                 </Box>
-                <Text mb={2} fontSize="sm" mt={2}>{t("education_senai_period")}</Text>
+                <Text fontSize="sm" mt={2}>{t("education_senai_period")}</Text>
+                <Text mb={2} fontSize="sm">{t("job_sao_roque_location")}</Text>
                 <Paragraph>{t("education_senai_description")}</Paragraph>
                 <Text fontSize="sm" fontWeight="bold" mt={2}>{t("Skills")}:</Text>
                 <Text fontSize="sm">{t("education_senai_skills")}</Text>
@@ -207,7 +209,8 @@ const Home = () => {
                     <Text fontSize="sm" color="gray.400">{t("education_opera_institution")}</Text>
                   </Box>
                 </Box>
-                <Text mb={2} fontSize="sm" mt={2}>{t("education_opera_period")}</Text>
+                <Text fontSize="sm" mt={2}>{t("education_opera_period")}</Text>
+                <Text mb={2} fontSize="sm">{t("job_sao_roque_location")}</Text>
                 <Paragraph>{t("education_opera_description")}</Paragraph>
                 <Text fontSize="sm" fontWeight="bold" mt={2}>{t("Skills")}:</Text>
                 <Text fontSize="sm">{t("education_opera_skills")}</Text>
