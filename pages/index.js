@@ -119,38 +119,6 @@ const Home = () => {
           </BioSection>
         </Section>
 
-        <Section delay={0.3}>
-          <Heading as="h3" variant="section-title">
-            ♥
-          </Heading>
-          <Paragraph>
-            {t("hobbies")}
-          </Paragraph>
-        </Section>
-
-        <Section delay={0.3}>
-          <Heading as="h3" variant="section-title">
-            {t("my_networks")}
-          </Heading>
-          <List>
-            <ListItem>
-              <Link href="https://github.com/jxhnlcs" target="_blank">
-                <Button variant="ghost" colorScheme="teal" leftIcon={<IoLogoGithub />}>
-                  @jxhnlcs
-                </Button>
-              </Link>
-            </ListItem>
-
-            <ListItem>
-              <Link href="https://www.linkedin.com/in/john-lucas-a23880208/" target="_blank">
-                <Button variant="ghost" colorScheme="teal" leftIcon={<IoLogoLinkedin />}>
-                  John Lucas
-                </Button>
-              </Link>
-            </ListItem>
-          </List>
-        </Section>
-
         <Section delay={0.4}>
           <Heading as="h3" variant="section-title">
             {t("work_experience")}
@@ -244,6 +212,38 @@ const Home = () => {
                 <Text fontSize="sm" fontWeight="bold" mt={2}>{t("Skills")}:</Text>
                 <Text fontSize="sm">{t("education_opera_skills")}</Text>
               </Box>
+            </ListItem>
+          </List>
+        </Section>
+
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            ♥
+          </Heading>
+          <Paragraph>
+            {t("hobbies")}
+          </Paragraph>
+        </Section>
+
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            {t("my_networks")}
+          </Heading>
+          <List>
+            <ListItem>
+              <Link href="https://github.com/jxhnlcs" target="_blank">
+                <Button variant="ghost" colorScheme="teal" leftIcon={<IoLogoGithub />}>
+                  @jxhnlcs
+                </Button>
+              </Link>
+            </ListItem>
+
+            <ListItem>
+              <Link href="https://www.linkedin.com/in/john-lucas-a23880208/" target="_blank">
+                <Button variant="ghost" colorScheme="teal" leftIcon={<IoLogoLinkedin />}>
+                  John Lucas
+                </Button>
+              </Link>
             </ListItem>
           </List>
         </Section>
