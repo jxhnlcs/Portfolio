@@ -143,7 +143,7 @@ i18n.use(initReactI18next).init({
         // Education
 
         "education": "Education",
-        "education_unifan_title": "Bachelor’s in Software Development",
+        "education_unifan_title": "Bachelor’s in Systems Analysis and Development",
         "education_unifan_institution": "UNIFAN - Nobre University Center",
         "education_unifan_period": "Jul 2023 - Dec 2025",
         "education_unifan_description": "The Software Development course trains professionals capable of developing, analyzing, designing, implementing, and updating information systems for various industries. By the end of the course, graduates will be qualified to create IT systems, with expertise in multiple programming languages and operational frameworks.",
