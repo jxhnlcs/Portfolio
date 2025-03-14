@@ -16,7 +16,7 @@ import Paragraph from '../components/paragraph';
 import { BioSection, BioYear } from '../components/bio';
 import Layout from '../components/layouts/article';
 import Section from '../components/section';
-import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
+import { IoLogoGithub, IoLogoLinkedin, IoMail } from 'react-icons/io5';
 import Image from 'next/image';
 import { FaVuejs, FaAngular, FaReact, FaNodeJs, FaJava } from "react-icons/fa";
 import { SiNextdotjs, SiNuxtdotjs, SiExpress, SiSpringboot, SiDocker, SiTerraform, SiFirebase, SiMysql, SiIonic } from "react-icons/si"
@@ -286,6 +286,14 @@ const Home = () => {
               <Link href="https://www.linkedin.com/in/john-lucas-a23880208/" target="_blank">
                 <Button variant="ghost" colorScheme="teal" leftIcon={<IoLogoLinkedin />}>
                   John Lucas
+                </Button>
+              </Link>
+            </ListItem>
+
+            <ListItem>
+              <Link href="mailto:joohnzay@gmail.com">
+                <Button variant="ghost" colorScheme="teal" leftIcon={<IoMail />}>
+                  joohnzay@gmail.com
                 </Button>
               </Link>
             </ListItem>
