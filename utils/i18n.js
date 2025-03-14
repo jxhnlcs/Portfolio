@@ -21,12 +21,13 @@ i18n.use(initReactI18next).init({
         "summary": "Summary",
         "bio_description": "John is a Web Developer who enjoys developing various types of solutions and systems for any companies or clients, aiming to solve real-life problems through code. He currently lives in Brazil and loves making new connections to feel part of the community.",
         "my_projects": "My Projects",
-        "bio": "Bio",
+        "bio": "Timeline",
         "current": "Now ",
         "job_current": "Mid-Level Frontend Developer at WeMind",
+        "job_2025": "Freelance Front-End Developer at Rekomendo",
         "job_2024": "Mid-Level Frontend Developer at AgMind",
         "job_2023": "Full Stack Developer at Grupo São Roque",
-        "education_university": "Started a degree in Software Development at UNIFAN",
+        "education_university": "Started a degree in Systems Analysis and Development at UNIFAN",
         "education_senai": "Completed a technical Software Development course at SENAI",
         "education_technical": "Started a technical course in Software Development at SENAI",
         "hobbies": "Anime, Music, Games, Piano, Manga, and Cats",
@@ -122,6 +123,16 @@ i18n.use(initReactI18next).init({
         "job_wemind_description": "I play a key role in creating and maintaining components for AgMind and Influlens projects. I am responsible for keeping the Frontend version up to date in production and integrating with the API.",
         "job_wemind_skills": "Angular, Ionic, TypeScript, REST API",
 
+        "job_rekomendo_title": "Front-End Developer",
+        "job_rekomendo_company": "Rekomendo",
+        "job_rekomendo_period": "Jul 2024 - Mar 2025 · 9 months",
+        "job_rekomendo_location": "Feira de Santana, Bahia, Brazil · Remote",
+        "job_rekomendo_description":
+          "At Rekomendo, I led front-end updates, ensuring an intuitive user experience. I worked on coding, prototyping, and documentation while implementing continuous UI improvements.\n\n" +
+          "The app connects clients with service providers, enabling professional searches and quick service requests. I used Ionic, Angular, and Firebase to build a modern, optimized interface.\n\n" +
+          "I collaborated with the back-end team, ensuring seamless integration with Node.js, Express, and Firebase. This experience strengthened my skills in UX/UI and scalable application development.",
+        "job_rekomendo_skills": "Ionic, Angular, Firebase, TypeScript, Node.js, Express",
+
         "job_sao_roque_title": "Full Stack Developer",
         "job_sao_roque_company": "Grupo São Roque",
         "job_sao_roque_period": "Sep 2023 - Nov 2023 · 3 months",
@@ -171,14 +182,15 @@ i18n.use(initReactI18next).init({
         "summary": "Resumo",
         "bio_description": "John é um Desenvolvedor Web que gosta de desenvolver vários tipos de soluções e sistemas para quaisquer empresas ou clientes no intuito de solucionar problemas da vida real em forma de código. Atualmente ele vive no Brasil e adora fazer novas conexões para se sentir dentro da comunidade.",
         "my_projects": "Meus Projetos",
-        "bio": "Bio",
+        "bio": "Linha do Tempo",
         "current": "Atual",
         "job_current": "Desenvolvedor Front-End Pleno na WeMind",
+        "job_2025": "Desenvolvedor Front-End Freelancer na Rekomendo",
         "job_2024": "Desenvolvedor Front-End Pleno na AgMind",
         "job_2023": "Desenvolvedor Full Stack no Grupo São Roque",
-        "education_university": "Ingressou no curso de ADS na UNIFAN",
-        "education_senai": "Concluiu o curso de Desenvolvimento de Sistemas no SENAI",
-        "education_technical": "Ingressou no curso técnico de Desenvolvimento de Sistemas no SENAI",
+        "education_university": "Ingressei no curso de Análise e Desenvolvimento de Sistemas na UNIFAN",
+        "education_senai": "Conclui o curso técnico de Desenvolvimento de Sistemas no SENAI",
+        "education_technical": "Ingressei no curso técnico de Desenvolvimento de Sistemas no SENAI",
         "hobbies": "Anime, Música, Jogos, Piano, Mangá e Gatos",
         "my_networks": "Minhas Redes",
 
@@ -271,6 +283,16 @@ i18n.use(initReactI18next).init({
         "job_wemind_location": "São Paulo, Brasil · Remoto",
         "job_wemind_description": "Desempenho um papel fundamental na criação e manutenção de componentes dos projetos AgMind e Influlens, sou responsável por manter a versão Front-End atualizada em produção e também atuo na integração com a API.",
         "job_wemind_skills": "Angular, Ionic, TypeScript, API REST",
+
+        "job_rekomendo_title": "Desenvolvedor Front-End",
+        "job_rekomendo_company": "Rekomendo",
+        "job_rekomendo_period": "Jul de 2024 - Mar de 2025 · 9 meses",
+        "job_rekomendo_location": "Feira de Santana, Bahia, Brasil · Remoto",
+        "job_rekomendo_description":
+          "Na Rekomendo, liderei atualizações do front-end, garantindo uma experiência intuitiva para os usuários. Atuei na codificação, prototipação e documentação, além de implementar melhorias contínuas na interface.\n\n" +
+          "O app conecta clientes a prestadores de serviços, permitindo buscas por profissionais e solicitações rápidas. Utilizei Ionic, Angular e Firebase para criar uma interface moderna e otimizada.\n\n" +
+          "Colaborei com a equipe de back-end, garantindo integração eficiente com Node.js, Express e Firebase. Essa experiência fortaleceu minhas habilidades em UX/UI e desenvolvimento de aplicações escaláveis.",
+        "job_rekomendo_skills": "Ionic, Angular, Firebase, TypeScript, Node.js, Express",
 
         "job_sao_roque_title": "Desenvolvedor Full Stack",
         "job_sao_roque_company": "Grupo São Roque",

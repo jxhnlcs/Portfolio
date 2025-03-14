@@ -18,6 +18,8 @@ import Layout from '../components/layouts/article';
 import Section from '../components/section';
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
 import Image from 'next/image';
+import { FaVuejs, FaAngular, FaReact, FaNodeJs, FaJava } from "react-icons/fa";
+import { SiNextdotjs, SiNuxtdotjs, SiExpress, SiSpringboot, SiDocker, SiTerraform, SiFirebase, SiMysql, SiIonic } from "react-icons/si"
 
 const Home = () => {
   const { t } = useTranslation(); // Obtém o hook para tradução
@@ -60,13 +62,31 @@ const Home = () => {
 
         <Box
           borderRadius="lg"
+          mt={4}
           mb={6}
           p={3}
           textAlign="center"
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
           css={{ backdropFilter: 'blur(10px)' }}
+          display="flex"
+          flexWrap="wrap"
+          justifyContent="center"
+          gap={4}
         >
-          {t("technologies")}
+          <FaVuejs size={30} color="#42b883" />
+          <FaAngular size={30} color="#dd0031" />
+          <FaReact size={30} color="#61dafb" />
+          <SiNextdotjs size={30} color="black" />
+          <SiNuxtdotjs size={30} color="#00dc82" />
+          <FaNodeJs size={30} color="#68a063" />
+          <SiExpress size={30} color="gray" />
+          <SiIonic size={30} color="#3880ff" />
+          <FaJava size={30} color="#007396" />
+          <SiSpringboot size={30} color="#6db33f" />
+          <SiDocker size={30} color="#2496ed" />
+          <SiTerraform size={30} color="#623ce4" />
+          <SiFirebase size={30} color="#ffca28" />
+          <SiMysql size={30} color="#00758f" />
         </Box>
 
         <Section delay={0.1}>
@@ -96,6 +116,10 @@ const Home = () => {
           <BioSection>
             <BioYear style={{ marginRight: '13px' }}>{t("current")}</BioYear>
             {t("job_current")}
+          </BioSection>
+          <BioSection>
+            <BioYear>2025</BioYear>
+            {t("job_2025")}
           </BioSection>
           <BioSection>
             <BioYear>2024</BioYear>
@@ -138,6 +162,23 @@ const Home = () => {
                 <Paragraph>{t("job_wemind_description")}</Paragraph>
                 <Text fontSize="sm" fontWeight="bold" mt={2}>{t("Skills")}:</Text>
                 <Text fontSize="sm">{t("job_wemind_skills")}</Text>
+              </Box>
+            </ListItem>
+
+            <ListItem>
+              <Box>
+                <Box display="flex" alignItems="center">
+                  <Image src="/images/indeximages/rekomendo-logo.png" alt="Rekomendo" width={50} height={50} />
+                  <Box ml={3}>
+                    <Heading as="h4" size="md">{t("job_rekomendo_title")}</Heading>
+                    <Text fontSize="sm" color="gray.400">{t("job_rekomendo_company")}</Text>
+                  </Box>
+                </Box>
+                <Text fontSize="sm" mt={2}>{t("job_rekomendo_period")}</Text>
+                <Text mb={2} fontSize="sm">{t("job_rekomendo_location")}</Text>
+                <Paragraph>{t("job_rekomendo_description")}</Paragraph>
+                <Text fontSize="sm" fontWeight="bold" mt={2}>{t("Skills")}:</Text>
+                <Text fontSize="sm">{t("job_rekomendo_skills")}</Text>
               </Box>
             </ListItem>
 
