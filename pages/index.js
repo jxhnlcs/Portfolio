@@ -11,7 +11,7 @@ import {
   Text,
   useColorModeValue
 } from '@chakra-ui/react';
-import { ChevronRightIcon } from '@chakra-ui/icons';
+import { ChevronRightIcon, DownloadIcon } from '@chakra-ui/icons';
 import Paragraph from '../components/paragraph';
 import { BioSection, BioYear } from '../components/bio';
 import Layout from '../components/layouts/article';
@@ -27,12 +27,22 @@ const Home = () => {
   return (
     <Layout>
       <Container>
-        <Box display={{ md: 'flex' }} marginTop={{ md: 10 }}>
+        <Box display={{ md: 'flex' }} alignItems="center" marginTop={{ md: 10 }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
               John Lucas
             </Heading>
             <p>{t("job_title")}</p>
+            <Button
+              as="a"
+              href="/pdf/cv_pt&en.pdf" // Link para o arquivo do CV
+              download
+              leftIcon={<DownloadIcon />}
+              colorScheme="teal"
+              mt={3} // margem superior para espaçamento
+            >
+              Baixar CV
+            </Button>
           </Box>
           <Box
             flexShrink={0}
