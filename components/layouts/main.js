@@ -7,17 +7,28 @@ const Main = ({ children, router }) => {
   return (
     <Box as="main" pb={8}>
       <Head>
+
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="John Lucas - Portfolio" />
         <meta name="author" content="John Lucas" />
         <meta name="author" content="jxhnlcs" />
-        <link rel="2720550" href="2720550.png" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <meta name="twitter:title" content="John Lucas" />
+
+        <meta property="og:title" content="John Lucas - Portfolio" />
+        <meta property="og:description" content="Bem-vindo ao meu portfólio! Aqui você encontra meus projetos e experiências." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://johnlucas.dev" />
+        <meta property="og:image" content="https://johnlucas.dev/thumbnail.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="John Lucas - Portfolio" />
+        <meta name="twitter:description" content="Veja meus projetos e experiências no meu portfólio." />
         <meta name="twitter:site" content="@jxhnlcs" />
         <meta name="twitter:creator" content="@jxhnlcs" />
-        <meta property="og:type" content="website" />
+        <meta name="twitter:image" content="https://johnlucas.dev/thumbnail.png" />
+
         <title>John Lucas - Portfolio</title>
       </Head>
 
