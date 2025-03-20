@@ -35,7 +35,7 @@ const Home = () => {
             <p>{t("job_title")}</p>
             <Button
               as="a"
-              href="/pdf/cv_pt&en.pdf" // Link para o arquivo do CV
+              href="/pdf/john_lucas_cv-pt&en.pdf" // Link para o arquivo do CV
               download
               leftIcon={<DownloadIcon />}
               colorScheme="teal"
