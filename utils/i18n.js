@@ -17,6 +17,7 @@ i18n.use(initReactI18next).init({
         // Home
 
         "job_title": "Software Developer",
+        "download_cv": "Download CV",
         "technologies": "Technologies: Vue, Angular, React, Next, Nuxt, Node, Express!",
         "summary": "Summary",
         "bio_description": "John is a Web Developer who enjoys developing various types of solutions and systems for any companies or clients, aiming to solve real-life problems through code. He currently lives in Brazil and loves making new connections to feel part of the community.",
@@ -178,6 +179,7 @@ i18n.use(initReactI18next).init({
         // Home
 
         "job_title": "Desenvolvedor de Software",
+        "download_cv": "Baixar CV",
         "technologies": "Tecnologias: Vue, Angular, React, Next, Nuxt, Node, Express!",
         "summary": "Resumo",
         "bio_description": "John é um Desenvolvedor Web que gosta de desenvolver vários tipos de soluções e sistemas para quaisquer empresas ou clientes no intuito de solucionar problemas da vida real em forma de código. Atualmente ele vive no Brasil e adora fazer novas conexões para se sentir dentro da comunidade.",

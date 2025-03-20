@@ -39,9 +39,9 @@ const Home = () => {
               download
               leftIcon={<DownloadIcon />}
               colorScheme="teal"
-              mt={3} // margem superior para espaçamento
+              mt={3}
             >
-              Baixar CV
+              {t("download_cv")}
             </Button>
           </Box>
           <Box
