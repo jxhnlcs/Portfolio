@@ -293,7 +293,7 @@ const Home = () => {
             </ListItem>
 
             <ListItem>
-              <Link href="https://www.linkedin.com/in/john-lucas-a23880208/" target="_blank">
+              <Link href="https://www.linkedin.com/in/johnlucasdev/" target="_blank">
                 <Button variant="ghost" colorScheme="teal" leftIcon={<IoLogoLinkedin />}>
                   John Lucas
                 </Button>
