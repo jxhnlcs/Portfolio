@@ -126,7 +126,7 @@ i18n.use(initReactI18next).init({
         // Work Experience
 
         "work_experience": "Work Experience",
-        "job_wemind_title": "Mid-Level Frontend Developer",
+        "job_wemind_title": "Frontend Developer",
         "job_wemind_company": "WeMind",
         "job_wemind_period": "Nov 2023 - Present",
         "job_wemind_location": "São Paulo, Brazil · Remote",
@@ -297,7 +297,7 @@ i18n.use(initReactI18next).init({
         // Work Experience
 
         "work_experience": "Experiência Profissional",
-        "job_wemind_title": "Desenvolvedor Front-End Pleno",
+        "job_wemind_title": "Desenvolvedor Front-End",
         "job_wemind_company": "WeMind",
         "job_wemind_period": "Nov de 2023 - o momento",
         "job_wemind_location": "São Paulo, Brasil · Remoto",
