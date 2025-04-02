@@ -34,7 +34,7 @@ i18n.use(initReactI18next).init({
         "hobbies": "Anime, Music, Games, Piano, Manga, and Cats",
         "my_networks": "My Networks",
 
-        "job_capgemini_title": "Full Stack Developer",
+        "job_capgemini_title": "Full Stack Angular Java Developer",
         "job_capgemini_company": "Capgemini",
         "job_capgemini_period": "Apr 2025 - Present",
         "job_capgemini_location": "São Paulo, Brazil · Remote",
@@ -205,7 +205,7 @@ i18n.use(initReactI18next).init({
         "hobbies": "Anime, Música, Jogos, Piano, Mangá e Gatos",
         "my_networks": "Minhas Redes",
 
-        "job_capgemini_title": "Desenvolvedor Full Stack",
+        "job_capgemini_title": "Desenvolvedor Full Stack Java Angular",
         "job_capgemini_company": "Capgemini",
         "job_capgemini_period": "Abr de 2025 - o momento",
         "job_capgemini_location": "São Paulo, Brasil · Remoto",
