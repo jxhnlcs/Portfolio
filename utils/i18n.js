@@ -20,7 +20,7 @@ i18n.use(initReactI18next).init({
         "download_cv": "Download CV",
         "technologies": "Technologies: Vue, Angular, React, Next, Nuxt, Node, Express!",
         "summary": "Summary",
-        "bio_description": "John is a Web Developer who enjoys developing various types of solutions and systems for any companies or clients, aiming to solve real-life problems through code. He currently lives in Brazil and loves making new connections to feel part of the community.",
+        "bio_description": "John is a Software Developer who enjoys developing various types of solutions and systems for any companies or clients, aiming to solve real-life problems through code. He currently lives in Brazil and loves making new connections to feel part of the community.",
         "my_projects": "My Projects",
         "bio": "Timeline",
         "current": "Now ",
@@ -33,6 +33,15 @@ i18n.use(initReactI18next).init({
         "education_technical": "Started a technical course in Software Development at SENAI",
         "hobbies": "Anime, Music, Games, Piano, Manga, and Cats",
         "my_networks": "My Networks",
+
+        "job_capgemini_title": "Full Stack Developer",
+        "job_capgemini_company": "Capgemini",
+        "job_capgemini_period": "Apr 2025 - Present",
+        "job_capgemini_location": "São Paulo, Brazil · Remote",
+        "job_capgemini_description": "At Capgemini, I started my first international experience as a Full Stack Java Angular Developer. I work on projects that demand a high level of code quality, scalability, and modern architecture using best practices like Domain-Driven Design (DDD) and cloud technologies.",
+        "job_capgemini_skills": "Angular, Java, DDD, Cloud, TypeScript",
+        "job_capgemini": "Full Stack Java Angular Developer at Capgemini",
+
 
         // 404
 
@@ -139,7 +148,7 @@ i18n.use(initReactI18next).init({
         "job_sao_roque_period": "Sep 2023 - Nov 2023 · 3 months",
         "job_sao_roque_location": "Feira de Santana, Bahia, Brazil · On-site",
         "job_sao_roque_description": "I played a key role in developing solutions for the company, including creating a price display screen for butcher shops in São Roque branches. Additionally, I led the development of a meal management system for São Roque agencies, which involved generating QR Code cards and developing QR Code readers for transaction validation. These solutions allowed the HR department to have better control over meal-related operations, ensuring efficient and transparent management.",
-        "job_sao_roque_skills": "Problem Solving, Solution Implementation, Figma (Software), Vue.js, GitHub, Coding Standards, MySQL, TypeScript, Node.js, Oracle SQL Developer",
+        "job_sao_roque_skills": "Vue.js, Node.js, MySQL, Oracle SQL Developer, TypeScript, GitHub, Figma",
 
         // Education
 
@@ -182,7 +191,7 @@ i18n.use(initReactI18next).init({
         "download_cv": "Baixar CV",
         "technologies": "Tecnologias: Vue, Angular, React, Next, Nuxt, Node, Express!",
         "summary": "Resumo",
-        "bio_description": "John é um Desenvolvedor Web que gosta de desenvolver vários tipos de soluções e sistemas para quaisquer empresas ou clientes no intuito de solucionar problemas da vida real em forma de código. Atualmente ele vive no Brasil e adora fazer novas conexões para se sentir dentro da comunidade.",
+        "bio_description": "John é um Desenvolvedor de Software que gosta de desenvolver vários tipos de soluções e sistemas para quaisquer empresas ou clientes no intuito de solucionar problemas da vida real em forma de código. Atualmente ele vive no Brasil e adora fazer novas conexões para se sentir dentro da comunidade.",
         "my_projects": "Meus Projetos",
         "bio": "Linha do Tempo",
         "current": "Atual",
@@ -195,6 +204,15 @@ i18n.use(initReactI18next).init({
         "education_technical": "Ingressei no curso técnico de Desenvolvimento de Sistemas no SENAI",
         "hobbies": "Anime, Música, Jogos, Piano, Mangá e Gatos",
         "my_networks": "Minhas Redes",
+
+        "job_capgemini_title": "Desenvolvedor Full Stack",
+        "job_capgemini_company": "Capgemini",
+        "job_capgemini_period": "Abr de 2025 - o momento",
+        "job_capgemini_location": "São Paulo, Brasil · Remoto",
+        "job_capgemini_description": "Na Capgemini, iniciei minha primeira experiência multinacional atuando como Desenvolvedor Full Stack Java Angular. Participo de projetos que exigem alta qualidade de código, escalabilidade e arquitetura moderna, utilizando boas práticas como DDD e tecnologias em nuvem.",
+        "job_capgemini_skills": "Angular, Java, DDD, Cloud, TypeScript",
+        "job_capgemini": "Desenvolvedor Full Stack Java Angular na Capgemini",
+
 
         // 404
 

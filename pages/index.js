@@ -125,6 +125,10 @@ const Home = () => {
           </Heading>
           <BioSection>
             <BioYear style={{ marginRight: '13px' }}>{t("current")}</BioYear>
+            {t("job_capgemini")}
+          </BioSection>
+          <BioSection>
+            <BioYear style={{ marginRight: '13px' }}>{t("current")}</BioYear>
             {t("job_current")}
           </BioSection>
           <BioSection>
@@ -158,6 +162,24 @@ const Home = () => {
             {t("work_experience")}
           </Heading>
           <List spacing={6} mt={6}>
+
+            <ListItem>
+              <Box>
+                <Box display="flex" alignItems="center">
+                  <Image src="/images/indeximages/capgemini-logo.png" alt="Capgemini" width={50} height={50} />
+                  <Box ml={3}>
+                    <Heading as="h4" size="md">{t("job_capgemini_title")}</Heading>
+                    <Text fontSize="sm" color="gray.400">{t("job_capgemini_company")}</Text>
+                  </Box>
+                </Box>
+                <Text fontSize="sm" mt={2}>{t("job_capgemini_period")}</Text>
+                <Text mb={2} fontSize="sm">{t("job_capgemini_location")}</Text>
+                <Paragraph>{t("job_capgemini_description")}</Paragraph>
+                <Text fontSize="sm" fontWeight="bold" mt={2}>{t("Skills")}:</Text>
+                <Text fontSize="sm">{t("job_capgemini_skills")}</Text>
+              </Box>
+            </ListItem>
+
             <ListItem>
               <Box>
                 <Box display="flex" alignItems="center">
