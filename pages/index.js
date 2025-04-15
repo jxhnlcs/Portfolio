@@ -21,7 +21,7 @@ import Image from 'next/image';
 import { FaVuejs, FaAngular, FaReact, FaNodeJs, FaJava } from "react-icons/fa";
 import { SiNextdotjs, SiNuxtdotjs, SiExpress, SiSpringboot, SiDocker, SiTerraform, SiFirebase, SiMysql, SiIonic } from "react-icons/si"
 import dynamic from 'next/dynamic'
-import { LaptopSpinner, LaptopContainer } from '../components/voxel-laptop-loader'
+import { LaptopSpinner } from '../components/voxel-laptop-loader'
 
 const LazyVoxelLaptop = dynamic(() => import('../components/voxel-laptop'), {
   ssr: false,
