@@ -197,7 +197,7 @@ i18n.use(initReactI18next).init({
         "current": "Atual",
         "job_current": "Desenvolvedor Front-End na WeMind",
         "job_2025": "Desenvolvedor Front-End na Rekomendo",
-        "job_2024": "Desenvolvedor Front-End Pleno na AgMind",
+        "job_2024": "Desenvolvedor Front-End na AgMind",
         "job_2023": "Desenvolvedor Full Stack no Grupo São Roque",
         "education_university": "Ingressei no curso de Análise e Desenvolvimento de Sistemas na UNIFAN",
         "education_senai": "Conclui o curso técnico de Desenvolvimento de Sistemas no SENAI",
