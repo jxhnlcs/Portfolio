@@ -33,9 +33,9 @@ const Home = () => {
 
   return (
     <Layout>
-      <Container maxW="container.md" pt={14}>
+      {/* <Container maxW="container.md" pt={14}>
         <LazyVoxelLaptop />
-      </Container>
+      </Container> */}
       <Container >
         <Box display={{ md: 'flex' }} alignItems="center" marginTop={{ md: 10 }}>
           <Box flexGrow={1}>
