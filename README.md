@@ -17,3 +17,5 @@ $ Estrutura do projeto
 │   # Imagens
 └── public
 ```
+
+Inspired by [Takuya Matsuyama](https://github.com/craftzdog)
