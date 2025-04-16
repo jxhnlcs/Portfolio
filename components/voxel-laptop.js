@@ -67,6 +67,7 @@ const VoxelLaptop = () => {
 
       const controls = new OrbitControls(camera, renderer.domElement)
       controls.autoRotate = true
+      controls.autoRotateSpeed = 0.8
       controls.target = target
 
       loadGLTFModel(scene, urlLaptopGLB, {
