@@ -20,22 +20,22 @@ import { IoLogoGithub, IoLogoLinkedin, IoMail } from 'react-icons/io5';
 import Image from 'next/image';
 import { FaVuejs, FaAngular, FaReact, FaNodeJs, FaJava } from "react-icons/fa";
 import { SiNextdotjs, SiNuxtdotjs, SiExpress, SiSpringboot, SiDocker, SiTerraform, SiFirebase, SiMysql, SiIonic } from "react-icons/si"
-import dynamic from 'next/dynamic'
-import { LaptopSpinner } from '../components/voxel-laptop-loader'
+// import dynamic from 'next/dynamic'
+// import { LaptopSpinner } from '../components/voxel-laptop-loader'
 
-const LazyVoxelLaptop = dynamic(() => import('../components/voxel-laptop'), {
-  ssr: false,
-  loading: () => <LaptopSpinner />
-})
+// const LazyVoxelLaptop = dynamic(() => import('../components/voxel-laptop'), {
+//   ssr: false,
+//   loading: () => <LaptopSpinner />
+// })
 
 const Home = () => {
   const { t } = useTranslation(); // Obtém o hook para tradução
 
   return (
     <Layout>
-      {/* <Container maxW="container.md" pt={14}>
-        <LazyVoxelLaptop />
-      </Container> */}
+      <Container maxW="container.md" pt={14}>
+        {/* <LazyVoxelLaptop /> */}
+      </Container>
       <Container >
         <Box display={{ md: 'flex' }} alignItems="center" marginTop={{ md: 10 }}>
           <Box flexGrow={1}>
