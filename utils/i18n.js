@@ -154,13 +154,13 @@ i18n.use(initReactI18next).init({
 
         "education": "Education",
         "education_unifan_title": "Bachelor’s in Systems Analysis and Development",
-        "education_unifan_institution": "UNIFAN - Nobre University Center",
+        "education_unifan_institution": "UNIFAN - Centro Universitário Nobre",
         "education_unifan_period": "Jul 2023 - Dec 2025",
         "education_unifan_description": "The Software Development course trains professionals capable of developing, analyzing, designing, implementing, and updating information systems for various industries. By the end of the course, graduates will be qualified to create IT systems, with expertise in multiple programming languages and operational frameworks.",
         "education_unifan_skills": "Software Engineering, DevOps, Databases, Algorithms, Cloud Computing",
 
         "education_senai_title": "Technical Degree in Software Development",
-        "education_senai_institution": "SENAI CIMATEC",
+        "education_senai_institution": "SENAI - Serviço Nacional de Aprendizagem Industrial",
         "education_senai_period": "Feb 2022 - Jun 2023",
         "education_senai_description": "The course trains technical professionals in Software Development, meeting the market demand for skilled programmers and software developers with the necessary technical and technological knowledge to keep up with industry evolution.",
         "education_senai_skills": "Team Leadership, CSS, Software Design Patterns, Python, GitHub, Figma (Software), JavaScript, SQL, REST API",
@@ -331,7 +331,7 @@ i18n.use(initReactI18next).init({
         "education_unifan_skills": "Engenharia de Software, DevOps, Banco de Dados, Algoritmos, Computação em Nuvem",
 
         "education_senai_title": "Ensino Técnico em Desenvolvimento de Sistemas",
-        "education_senai_institution": "SENAI CIMATEC",
+        "education_senai_institution": "SENAI - Serviço Nacional de Aprendizagem Industrial",
         "education_senai_period": "Fev de 2022 - Jun de 2023",
         "education_senai_description": "O curso prepara profissionais para atuar no desenvolvimento de software e programação.",
         "education_senai_skills": "Liderança, CSS, Padrões de Projeto, Python, GitHub, Figma, JavaScript, SQL, API REST",

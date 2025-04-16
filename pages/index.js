@@ -193,7 +193,7 @@ const Home = () => {
             <ListItem>
               <Box>
                 <Box display="flex" alignItems="center">
-                  <Image src="/images/indeximages/wemind-logo.png" alt="WeMind" width={50} height={50} />
+                  <Image src="/images/indeximages/wemind_logo.png" alt="WeMind" width={50} height={50} />
                   <Box ml={3}>
                     <Heading as="h4" size="md">{t("job_wemind_title")}</Heading>
                     <Text fontSize="sm" color="gray.400">{t("job_wemind_company")}</Text>
@@ -269,7 +269,7 @@ const Home = () => {
             <ListItem>
               <Box>
                 <Box display="flex" alignItems="center">
-                  <Image src="/images/indeximages/senai-logo.png" alt="SENAI CIMATEC" width={50} height={50} />
+                  <Image src="/images/indeximages/senai_logo.png" alt="SENAI" width={50} height={50} />
                   <Box ml={3}>
                     <Heading as="h4" size="md">{t("education_senai_title")}</Heading>
                     <Text fontSize="sm" color="gray.400">{t("education_senai_institution")}</Text>
