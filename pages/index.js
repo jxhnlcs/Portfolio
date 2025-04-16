@@ -259,7 +259,7 @@ const Home = () => {
                   </Box>
                 </Box>
                 <Text fontSize="sm" mt={2}>{t("education_unifan_period")}</Text>
-                <Text mb={2} fontSize="sm">{t("job_sao_roque_location")}</Text>
+                <Text mb={2} fontSize="sm">{t("unifan_location")}</Text>
                 <Paragraph>{t("education_unifan_description")}</Paragraph>
                 <Text fontSize="sm" fontWeight="bold" mt={2}>{t("Skills")}:</Text>
                 <Text fontSize="sm">{t("education_unifan_skills")}</Text>

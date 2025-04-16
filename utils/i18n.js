@@ -150,6 +150,8 @@ i18n.use(initReactI18next).init({
         "job_sao_roque_description": "I played a key role in developing solutions for the company, including creating a price display screen for butcher shops in São Roque branches. Additionally, I led the development of a meal management system for São Roque agencies, which involved generating QR Code cards and developing QR Code readers for transaction validation. These solutions allowed the HR department to have better control over meal-related operations, ensuring efficient and transparent management.",
         "job_sao_roque_skills": "Vue.js, Node.js, MySQL, Oracle SQL Developer, TypeScript, GitHub, Figma",
 
+        "unifan_location": "Feira de Santana, Bahia, Brazil · Remote",
+
         // Education
 
         "education": "Education",
@@ -320,6 +322,8 @@ i18n.use(initReactI18next).init({
         "job_sao_roque_location": "Feira de Santana, Bahia, Brasil · Presencial",
         "job_sao_roque_description": "Desenvolvi soluções para a empresa, incluindo uma tela para exibição de valores das carnes nos açougues das filiais e um sistema de gerenciamento de refeições com QR Code.",
         "job_sao_roque_skills": "Vue.js, Node.js, MySQL, Oracle SQL Developer, TypeScript, GitHub, Figma",
+
+        "unifan_location": "Feira de Santana, Bahia, Brasil · Remoto",
 
         // Education
 
