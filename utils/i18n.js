@@ -24,9 +24,9 @@ i18n.use(initReactI18next).init({
         "my_projects": "My Projects",
         "bio": "Timeline",
         "current": "Now ",
-        "job_current": "Mid-Level Frontend Developer at WeMind",
-        "job_2025": "Freelance Front-End Developer at Rekomendo",
-        "job_2024": "Mid-Level Frontend Developer at AgMind",
+        "job_current": "Front-end Developer at WeMind",
+        "job_2025": "Front-End Developer at Rekomendo",
+        "job_2024": "Front-end Developer at AgMind",
         "job_2023": "Full Stack Developer at Grupo São Roque",
         "education_university": "Started a degree in Systems Analysis and Development at UNIFAN",
         "education_senai": "Completed a technical Software Development course at SENAI",
@@ -38,9 +38,9 @@ i18n.use(initReactI18next).init({
         "job_capgemini_company": "Capgemini",
         "job_capgemini_period": "Apr 2025 - Present",
         "job_capgemini_location": "São Paulo, Brazil · Remote",
-        "job_capgemini_description": "At Capgemini, I started my first international experience as a Full Stack Java Angular Developer. I work on projects that demand a high level of code quality, scalability, and modern architecture using best practices like Domain-Driven Design (DDD) and cloud technologies.",
+        "job_capgemini_description": "At Capgemini, I started my first international experience as a Full Stack Angular Java Developer. I work on projects that demand a high level of code quality, scalability, and modern architecture using best practices like Domain-Driven Design (DDD) and cloud technologies.",
         "job_capgemini_skills": "Angular, Java, DDD, Cloud, TypeScript",
-        "job_capgemini": "Full Stack Java Angular Developer at Capgemini",
+        "job_capgemini": "Full Stack Angular Java Developer at Capgemini",
 
 
         // 404
@@ -126,11 +126,11 @@ i18n.use(initReactI18next).init({
         // Work Experience
 
         "work_experience": "Work Experience",
-        "job_wemind_title": "Frontend Developer",
+        "job_wemind_title": "Front-end Developer",
         "job_wemind_company": "WeMind",
         "job_wemind_period": "Nov 2023 - Present",
         "job_wemind_location": "São Paulo, Brazil · Remote",
-        "job_wemind_description": "I play a key role in creating and maintaining components for AgMind and Influlens projects. I am responsible for keeping the Frontend version up to date in production and integrating with the API.",
+        "job_wemind_description": "I play a key role in creating and maintaining components for AgMind and Influlens projects. I am responsible for keeping the Front-end version up to date in production and integrating with the API.",
         "job_wemind_skills": "Angular, Ionic, TypeScript, REST API",
 
         "job_rekomendo_title": "Front-End Developer",
@@ -165,7 +165,7 @@ i18n.use(initReactI18next).init({
         "education_senai_description": "The course trains technical professionals in Software Development, meeting the market demand for skilled programmers and software developers with the necessary technical and technological knowledge to keep up with industry evolution.",
         "education_senai_skills": "Team Leadership, CSS, Software Design Patterns, Python, GitHub, Figma (Software), JavaScript, SQL, REST API",
 
-        "education_opera_title": "English as a Second Language",
+        "education_opera_title": "English",
         "education_opera_institution": "Opera Idiomas",
         "education_opera_period": "Jan 2021 - Dec 2023",
         "education_opera_description": "Developed the ability to communicate fluently in English, discuss almost any topic, and understand spoken language easily. Gained the skill to watch movies and series in English without subtitles and follow conversations with ease.",
@@ -195,8 +195,8 @@ i18n.use(initReactI18next).init({
         "my_projects": "Meus Projetos",
         "bio": "Linha do Tempo",
         "current": "Atual",
-        "job_current": "Desenvolvedor Front-End Pleno na WeMind",
-        "job_2025": "Desenvolvedor Front-End Freelancer na Rekomendo",
+        "job_current": "Desenvolvedor Front-End na WeMind",
+        "job_2025": "Desenvolvedor Front-End na Rekomendo",
         "job_2024": "Desenvolvedor Front-End Pleno na AgMind",
         "job_2023": "Desenvolvedor Full Stack no Grupo São Roque",
         "education_university": "Ingressei no curso de Análise e Desenvolvimento de Sistemas na UNIFAN",
@@ -205,13 +205,13 @@ i18n.use(initReactI18next).init({
         "hobbies": "Anime, Música, Jogos, Piano, Mangá e Gatos",
         "my_networks": "Minhas Redes",
 
-        "job_capgemini_title": "Desenvolvedor Full Stack Java Angular",
+        "job_capgemini_title": "Desenvolvedor Full Stack Angular Java",
         "job_capgemini_company": "Capgemini",
         "job_capgemini_period": "Abr de 2025 - o momento",
         "job_capgemini_location": "São Paulo, Brasil · Remoto",
-        "job_capgemini_description": "Na Capgemini, iniciei minha primeira experiência multinacional atuando como Desenvolvedor Full Stack Java Angular. Participo de projetos que exigem alta qualidade de código, escalabilidade e arquitetura moderna, utilizando boas práticas como DDD e tecnologias em nuvem.",
+        "job_capgemini_description": "Na Capgemini, iniciei minha primeira experiência multinacional atuando como Desenvolvedor Full Stack Angular Java. Participo de projetos que exigem alta qualidade de código, escalabilidade e arquitetura moderna, utilizando boas práticas como DDD e tecnologias em nuvem.",
         "job_capgemini_skills": "Angular, Java, DDD, Cloud, TypeScript",
-        "job_capgemini": "Desenvolvedor Full Stack Java Angular na Capgemini",
+        "job_capgemini": "Desenvolvedor Full Stack Angular Java na Capgemini",
 
 
         // 404
@@ -336,7 +336,7 @@ i18n.use(initReactI18next).init({
         "education_senai_description": "O curso prepara profissionais para atuar no desenvolvimento de software e programação.",
         "education_senai_skills": "Liderança, CSS, Padrões de Projeto, Python, GitHub, Figma, JavaScript, SQL, API REST",
 
-        "education_opera_title": "Ensino de Inglês como Segundo Idioma",
+        "education_opera_title": "Inglês",
         "education_opera_institution": "Opera Idiomas",
         "education_opera_period": "Jan de 2021 - Dez de 2023",
         "education_opera_description": "Curso focado na fluência e compreensão total da língua inglesa.",
