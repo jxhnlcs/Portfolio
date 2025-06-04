@@ -39,7 +39,7 @@ i18n.use(initReactI18next).init({
         "job_capgemini_period": "Apr 2025 - Present",
         "job_capgemini_location": "São Paulo, Brazil · Remote",
         "job_capgemini_description": "At Capgemini, I started my first international experience as a Full Stack Angular Java Developer. I work on projects that demand a high level of code quality, scalability, and modern architecture using best practices like Domain-Driven Design (DDD) and cloud technologies.",
-        "job_capgemini_skills": "Angular, Java, DDD, Cloud, TypeScript",
+        "job_capgemini_skills": "Angular, Java, DDD, TypeScript, Apache Kafka, MongoDB, Sonarqube",
         "job_capgemini": "Full Stack Angular Java Developer at Capgemini",
 
 
@@ -212,7 +212,7 @@ i18n.use(initReactI18next).init({
         "job_capgemini_period": "Abr de 2025 - o momento",
         "job_capgemini_location": "São Paulo, Brasil · Remoto",
         "job_capgemini_description": "Na Capgemini, iniciei minha primeira experiência multinacional atuando como Desenvolvedor Full Stack Angular Java. Participo de projetos que exigem alta qualidade de código, escalabilidade e arquitetura moderna, utilizando boas práticas como DDD e tecnologias em nuvem.",
-        "job_capgemini_skills": "Angular, Java, DDD, Cloud, TypeScript",
+        "job_capgemini_skills": "Angular, Java, DDD, TypeScript, Apache Kafka, MongoDB, Sonarqube",
         "job_capgemini": "Desenvolvedor Full Stack Angular Java na Capgemini",
 
 
