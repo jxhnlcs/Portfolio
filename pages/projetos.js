@@ -10,6 +10,7 @@ import thumbAcougue from '../public/images/works/acougue_eyecatch.png';
 import thumbProsel from '../public/images/works/prosel_eyecatch.png';
 import thumbBuzzu from '../public/images/works/buzzu_eyecatch.png';
 import thumbRekomendo from '../public/images/works/rekomendo_eyecatch.png';
+import thumbPlanejar from '../public/images/works/planejar-eyecatch.png';
 
 const Projetos = () => {
   const { t } = useTranslation(); // Hook para tradução
@@ -22,6 +23,12 @@ const Projetos = () => {
         </Heading>
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          <Section>
+            <WorkGridItem id="planejar" title="Planejar Patrimonial" thumbnail={thumbPlanejar}>
+              {t("projects_planejar_desc")}
+            </WorkGridItem>
+          </Section>
+
           <Section>
             <WorkGridItem id="rekomendo" title="Rekomendo" thumbnail={thumbRekomendo}>
               {t("projects_rekomendo_desc")}

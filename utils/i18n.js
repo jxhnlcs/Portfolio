@@ -55,6 +55,7 @@ i18n.use(initReactI18next).init({
         "projects_jobs": "Jobs",
         "projects_personal": "Personal",
         "projects_collaborations": "Collaborations",
+        "projects_planejar_desc": "System that automates tenant billing with boleto generation and WhatsApp delivery via Meta Business.",
         "projects_rekomendo_desc": "App to help find service providers in your region.",
         "projects_tecer_desc": "Management system and app for Tecer Consulting company.",
         "projects_acougue_desc": "Price display system for butcher shops at São Roque branches.",
@@ -122,6 +123,13 @@ i18n.use(initReactI18next).init({
         "platforms": "Platforms",
         "stacks": "Stacks",
         "work_rekomendo_online_system": "Online System",
+
+        // Planejar Patrimonial
+
+        "work_planejar_title": "Planejar Patrimonial",
+        "work_planejar_description": "Job project focused on rental collection management. The system generates tenant charges with automated boleto issuance and sends them through WhatsApp using Meta Business.",
+        "work_planejar_online_system": "Online System",
+        "work_planejar_client_only": "Website available only to the client.",
 
         // Work Experience
 
@@ -228,6 +236,7 @@ i18n.use(initReactI18next).init({
         "projects_jobs": "Jobs",
         "projects_personal": "Pessoais",
         "projects_collaborations": "Colaborações",
+        "projects_planejar_desc": "Sistema que automatiza cobranças de inquilinos com geração de boleto e envio por WhatsApp via Meta Business.",
         "projects_rekomendo_desc": "Aplicativo para facilitar o encontro de prestadores de serviços na sua região.",
         "projects_tecer_desc": "Sistema de gestão e aplicativo para a empresa Tecer Consultoria.",
         "projects_acougue_desc": "Tela de exibição de valores das carnes destinada aos açougues das filiais da São Roque.",
@@ -295,6 +304,13 @@ i18n.use(initReactI18next).init({
         "platforms": "Plataformas",
         "stacks": "Stacks",
         "work_rekomendo_online_system": "Sistema (Online)",
+
+        // Planejar Patrimonial
+
+        "work_planejar_title": "Planejar Patrimonial",
+        "work_planejar_description": "Job focado em gestão de cobranças de aluguel. O sistema gera cobranças para inquilinos com automação de emissão de boleto e envio por WhatsApp via Meta Business.",
+        "work_planejar_online_system": "Sistema (Online)",
+        "work_planejar_client_only": "Site disponível apenas para o cliente.",
 
         // Work Experience
 
