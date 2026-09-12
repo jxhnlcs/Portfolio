@@ -19,7 +19,7 @@ const Main = ({ children, router }) => {
         <meta property="og:description" content="Bem-vindo ao meu portfólio! Aqui você encontra meus projetos e experiências." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://johnlucas.dev" />
-        <meta property="og:image" content="https://johnlucas.dev/thumbnail.png" />
+        <meta property="og:image" content="https://johnlucas.dev/og-image.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
@@ -28,7 +28,7 @@ const Main = ({ children, router }) => {
         <meta name="twitter:description" content="Veja meus projetos e experiências no meu portfólio." />
         <meta name="twitter:site" content="@jxhnlcs" />
         <meta name="twitter:creator" content="@jxhnlcs" />
-        <meta name="twitter:image" content="https://johnlucas.dev/thumbnail.png" />
+        <meta name="twitter:image" content="https://johnlucas.dev/og-image.png" />
 
         <title>John Lucas - Portfolio</title>
       </Head>

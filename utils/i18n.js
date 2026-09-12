@@ -20,13 +20,13 @@ i18n.use(initReactI18next).init({
         "download_cv": "Download CV",
         "expand_photo": "Click to expand the photo",
         "back_to_top": "Back to top",
-        "sections": "Sections",
+        "sections": "Sections",
         "technologies": "Technologies: Vue, Angular, React, Next, Nuxt, Node, Express!",
         "summary": "Summary",
         "bio_description":
           "I am a Full Stack Software Developer with over 3 years of experience building web applications, enterprise systems, and digital products. I currently work at Capgemini on a project for Bradesco, mainly with Java, Spring Boot, Angular, microservices, and micro frontends, contributing to a strategic customer service platform.\n\n" +
           "Throughout my career I have worked in different contexts, from enterprise systems and banking applications to digital products and custom software, using technologies such as Java, Spring Boot, Angular, TypeScript, Node.js, Vue.js, and PHP/Symfony. I also have experience with DDD, Hexagonal Architecture, Clean Architecture, CI/CD, REST APIs, messaging, and event-driven development.\n\n" +
-          "Beyond development, I have acted as a technical lead for Front-End teams, organizing code, defining technical approaches, reviewing implementations, and solving complex problems. I am also Co-Founder of Lamp, where I take part in the entire development cycle of custom solutions for companies, from requirements gathering and architecture to development, infrastructure, and delivery.\n\n" +
+          "Beyond development, I have acted as a technical lead for Front-End teams, organizing code, defining technical approaches, reviewing implementations, and solving complex problems. I also take part in the entire development cycle of custom solutions for companies, from requirements gathering and architecture to development, infrastructure, and delivery.\n\n" +
           "My goal is to keep evolving as a software engineer, deepening my knowledge in architecture, distributed systems, cloud, and artificial intelligence, building scalable, sustainable, and high-impact solutions.",
         "my_projects": "My Projects",
         "bio": "Timeline",
@@ -279,13 +279,13 @@ i18n.use(initReactI18next).init({
         "download_cv": "Baixar CV",
         "expand_photo": "Clique para expandir a foto",
         "back_to_top": "Voltar ao topo",
-        "sections": "Seções",
+        "sections": "Seções",
         "technologies": "Tecnologias: Vue, Angular, React, Next, Nuxt, Node, Express!",
         "summary": "Resumo",
         "bio_description":
           "Sou Desenvolvedor de Software Full Stack com mais de 3 anos de experiência no desenvolvimento de aplicações web, sistemas corporativos e produtos digitais. Atualmente atuo na Capgemini, em um projeto para o Bradesco, trabalhando principalmente com Java, Spring Boot, Angular, microsserviços e micro frontends, contribuindo para uma plataforma estratégica de atendimento ao cliente.\n\n" +
           "Ao longo da minha carreira, trabalhei em diferentes contextos, desde sistemas empresariais e aplicações bancárias até produtos digitais e softwares personalizados, utilizando tecnologias como Java, Spring Boot, Angular, TypeScript, Node.js, Vue.js e PHP/Symfony. Também tenho experiência com DDD, Arquitetura Hexagonal, Clean Architecture, CI/CD, APIs REST, mensageria e desenvolvimento orientado a eventos.\n\n" +
-          "Além do desenvolvimento, já atuei com liderança técnica de equipes de Front-End, organização de código, definição de abordagens técnicas, revisão de implementações e resolução de problemas complexos. Atualmente, também sou Co-Founder da Lamp, onde participo de todo o ciclo de desenvolvimento de soluções personalizadas para empresas, desde o levantamento de requisitos e arquitetura até desenvolvimento, infraestrutura e entrega.\n\n" +
+          "Além do desenvolvimento, já atuei com liderança técnica de equipes de Front-End, organização de código, definição de abordagens técnicas, revisão de implementações e resolução de problemas complexos. Também participo de todo o ciclo de desenvolvimento de soluções personalizadas para empresas, desde o levantamento de requisitos e arquitetura até desenvolvimento, infraestrutura e entrega.\n\n" +
           "Tenho como objetivo continuar evoluindo como engenheiro de software, aprofundando meus conhecimentos em arquitetura, sistemas distribuídos, cloud e inteligência artificial, buscando construir soluções escaláveis, sustentáveis e de alto impacto.",
         "my_projects": "Meus Projetos",
         "bio": "Linha do Tempo",

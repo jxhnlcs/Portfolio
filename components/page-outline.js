@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import {
-  Box,
   IconButton,
   Link,
   List,
@@ -10,6 +9,7 @@ import {
   MenuButton,
   MenuItem,
   MenuList,
+  Box,
   useColorModeValue
 } from '@chakra-ui/react';
 import { Global } from '@emotion/react';
@@ -19,9 +19,15 @@ import { HamburgerIcon } from '@chakra-ui/icons';
 const PageOutline = ({ sections }) => {
   const { t } = useTranslation(); // Hook para tradução
   const [active, setActive] = useState(sections[0]?.id);
+  const [mounted, setMounted] = useState(false); // Entrada suave, igual às seções
   const activeColor = useColorModeValue('teal.500', 'teal.200'); // Mesma cor dos botões de ação
   const idleColor = useColorModeValue('gray.600', 'whiteAlpha.700');
   const trackColor = useColorModeValue('blackAlpha.200', 'whiteAlpha.300');
+
+  useEffect(() => {
+    const raf = requestAnimationFrame(() => setMounted(true));
+    return () => cancelAnimationFrame(raf);
+  }, []);
 
   useEffect(() => {
     const onScroll = () => {
@@ -101,9 +107,13 @@ const PageOutline = ({ sections }) => {
       display={{ base: 'none', xl: 'block' }}
       position="fixed"
       top="140px"
-      left="max(24px, calc((100vw - 48rem) / 2 - 240px))"
+      left="50%"
+      ml="calc(-24rem - 234px)"
       w="210px"
       zIndex={1}
+      opacity={mounted ? 1 : 0}
+      transform={mounted ? 'translateX(0)' : 'translateX(-10px)'}
+      transition="opacity 0.8s ease 0.2s, transform 0.8s ease 0.2s"
     >
       <List spacing={0} borderLeftWidth={2} borderColor={trackColor}>
         {sections.map(section => {
@@ -115,6 +125,7 @@ const PageOutline = ({ sections }) => {
               borderLeftWidth={2}
               borderColor={isActive ? activeColor : 'transparent'}
               ml="-2px"
+              transition="border-color 0.3s ease"
             >
               <Link
                 href={`#${section.id}`}
@@ -126,6 +137,7 @@ const PageOutline = ({ sections }) => {
                 lineHeight="short"
                 color={isActive ? activeColor : idleColor}
                 fontWeight={isActive ? 'bold' : 'normal'}
+                transition="color 0.3s ease"
                 _hover={{ textDecoration: 'none', color: activeColor }}
               >
                 {section.label}
