@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import Head from 'next/head'
 import { GridItemStyle } from '../grid-item'
+import { ImageViewerProvider } from '../image-viewer'
 
 const variants = {
   hidden: { opacity: 0, x: 0, y: 20 },
@@ -27,7 +28,7 @@ const Layout = ({ children, title }) => {
             <meta property="og:title" content={t} />
           </Head>
         )}
-        {children}
+        <ImageViewerProvider>{children}</ImageViewerProvider>
 
         <GridItemStyle />
       </>

@@ -1,7 +1,8 @@
 import NextLink from 'next/link';
 import { useTranslation } from 'react-i18next';
-import { Heading, Box, Image, Link, Badge } from '@chakra-ui/react';
+import { Heading, Box, Link, Badge } from '@chakra-ui/react';
 import { ChevronRightIcon } from '@chakra-ui/icons';
+import { ViewableImage } from './image-viewer';
 
 export const Title = ({ children }) => {
   const { t } = useTranslation(); // Hook para tradução
@@ -23,7 +24,7 @@ export const Title = ({ children }) => {
 };
 
 export const WorkImage = ({ src, alt }) => (
-  <Image borderRadius="lg" w="full" src={src} alt={alt} mb={4} />
+  <ViewableImage src={src} alt={alt} />
 );
 
 export const Meta = ({ children }) => (

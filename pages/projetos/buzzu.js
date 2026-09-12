@@ -53,7 +53,6 @@ const Work = () => {
         <WorkImage src="/images/works/buzzu-4.png" alt="Buzzu" />
         <WorkImage src="/images/works/buzzu-5.png" alt="Buzzu" />
         <WorkImage src="/images/works/buzzu-6.png" alt="Buzzu" />
-        <WorkImage src="/images/works/buzzu-7.png" alt="Buzzu" />
       </Container>
     </Layout>
   );

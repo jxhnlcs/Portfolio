@@ -11,6 +11,8 @@ import thumbProsel from '../public/images/works/prosel_eyecatch.png';
 import thumbBuzzu from '../public/images/works/buzzu_eyecatch.png';
 import thumbRekomendo from '../public/images/works/rekomendo_eyecatch.png';
 import thumbPlanejar from '../public/images/works/planejar-eyecatch.png';
+import thumbJloads from '../public/images/works/jloads_eyecatch.png';
+import thumbJlvendas from '../public/images/works/jlvendas_eyecatch.png';
 
 const Projetos = () => {
   const { t } = useTranslation(); // Hook para tradução
@@ -24,25 +26,31 @@ const Projetos = () => {
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
-            <WorkGridItem id="planejar" title="Planejar Patrimonial" thumbnail={thumbPlanejar}>
+            <WorkGridItem id="planejar" title="Planejar Patrimonial" thumbnail={thumbPlanejar} year="2026">
               {t("projects_planejar_desc")}
             </WorkGridItem>
           </Section>
 
           <Section>
-            <WorkGridItem id="rekomendo" title="Rekomendo" thumbnail={thumbRekomendo}>
+            <WorkGridItem id="jlvendas" title="JL Vendas" thumbnail={thumbJlvendas} year="2026">
+              {t("projects_jlvendas_desc")}
+            </WorkGridItem>
+          </Section>
+
+          <Section>
+            <WorkGridItem id="rekomendo" title="Rekomendo" thumbnail={thumbRekomendo} year="2024 - 2025">
               {t("projects_rekomendo_desc")}
             </WorkGridItem>
           </Section>
 
           <Section>
-            <WorkGridItem id="tecer" title="Tecer Gestão e Aplicativo" thumbnail={thumbTecer}>
+            <WorkGridItem id="tecer" title="Tecer Gestão e Aplicativo" thumbnail={thumbTecer} year="2023">
               {t("projects_tecer_desc")}
             </WorkGridItem>
           </Section>
 
           <Section delay={0.1}>
-            <WorkGridItem id="acougue" title="Açougue São Roque" thumbnail={thumbAcougue}>
+            <WorkGridItem id="acougue" title="Açougue São Roque" thumbnail={thumbAcougue} year="2023">
               {t("projects_acougue_desc")}
             </WorkGridItem>
           </Section>
@@ -57,14 +65,20 @@ const Projetos = () => {
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.3}>
-            <WorkGridItem id="doopets" title="Doo Pets" thumbnail={thumbDoopets}>
+            <WorkGridItem id="doopets" title="Doo Pets" thumbnail={thumbDoopets} year="2023">
               {t("projects_doopets_desc")}
             </WorkGridItem>
           </Section>
 
           <Section delay={0.3}>
-            <WorkGridItem id="prosel" title="Prosel" thumbnail={thumbProsel}>
+            <WorkGridItem id="prosel" title="Prosel" thumbnail={thumbProsel} year="2024">
               {t("projects_prosel_desc")}
+            </WorkGridItem>
+          </Section>
+
+          <Section delay={0.3}>
+            <WorkGridItem id="jloads" title="JLoads" thumbnail={thumbJloads} year="2026">
+              {t("projects_jloads_desc")}
             </WorkGridItem>
           </Section>
         </SimpleGrid>
@@ -78,7 +92,7 @@ const Projetos = () => {
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.5}>
-            <WorkGridItem id="buzzu" thumbnail={thumbBuzzu} title="Buzzu">
+            <WorkGridItem id="buzzu" thumbnail={thumbBuzzu} title="Buzzu" year="2023">
               {t("projects_buzzu_desc")}
             </WorkGridItem>
           </Section>
