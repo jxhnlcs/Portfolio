@@ -77,6 +77,7 @@ i18n.use(initReactI18next).init({
         "projects_prosel_desc": "A system to facilitate and optimize the work of stretcher bearers responsible for transporting patients in a hospital.",
         "projects_buzzu_desc": "Public Transport App.",
         "projects_jloads_desc": "Open-source desktop app for downloading media through a local browser-based interface.",
+        "projects_chamae_desc": "Multi-tenant SaaS for calling service staff via NFC/QR Code, with a real-time panel, metrics dashboard, and automatic table sign artwork.",
         "projects_jlvendas_desc": "Sales, cash, goals, and bonus management system running in production at retail clothing stores.",
 
         // Work
@@ -169,6 +170,17 @@ i18n.use(initReactI18next).init({
           "It runs in production today at the family stores with real sales data every day, and the next step is turning it into a product sold to other retail stores, with self-service onboarding, per-employee login, server-side validation through Cloud Functions, and subscription management.",
         "work_jlvendas_online_system": "Online System",
         "work_jlvendas_client_only": "System in production, available only to the stores.",
+
+        // Chamaê
+
+        "work_chamae_title": "Chamaê",
+        "work_chamae_description":
+          "Chamaê is a SaaS that replaces \"raising your hand to call the waiter\" with a sign on the table. The customer taps their phone (NFC) or scans the QR Code, opens a page with no install or login, and taps what they need: call the waiter, ask for the bill, water, or any other action the business configured. They can also write a message, like \"more ketchup\". The staff gets the call instantly on the panel, with sound.\n\n" +
+          "It works for any business with service points: restaurants and bars (tables), hospitals (beds), hotels (rooms), salons and clinics (booths, rooms, offices). Point types are configurable.\n\n" +
+          "The business model: the client reaches out through the landing page, I register the company in the admin with the plan's point limit, the system generates the sign artwork for each point with number and QR Code, and I produce the signs, write the NFC chip, and install them. Revenue comes from a monthly subscription by point limit plus the sale and installation of the signs.\n\n" +
+          "Businesses get a real-time call panel with sound alerts, table and action management, sign ordering, and a Performance dashboard (average response time, peak hours, heat map, top actions and tables). The admin area gives an overview of every client, company and admin registration, management of any company's points and actions, sign artwork generation (4 templates, with and without QR), and the sign order queue.\n\n" +
+          "On the technical side, it runs on Angular 20 (standalone components, signals, lazy loading) with Firebase Auth and Cloud Firestore and no server of its own. All security lives in the Firestore Security Rules, covered by 31 automated tests on the emulator, which also enforce anti-fraud rules: the plan's table limit, the cooldown between calls, and the integrity of each call.\n\n" +
+          "It was designed for low Firestore cost at 10,000+ users: the customer screen reads a single document, attending a call is a batch of writes with no reads, the dashboard uses daily summaries (at most 1 read per day in the period), and images live in subcollections that listings don't load. QR Codes and sign artwork are generated on canvas in the browser, and it's hosted on Vercel with a custom domain and SEO.",
 
         // Work Experience
 
@@ -336,6 +348,7 @@ i18n.use(initReactI18next).init({
         "projects_prosel_desc": "Um sistema para facilitar e otimizar as atividades dos maqueiros, responsáveis pelo transporte dos pacientes em um hospital.",
         "projects_buzzu_desc": "Aplicativo de Transporte Público.",
         "projects_jloads_desc": "Aplicação desktop open source para download de mídias por uma interface web local.",
+        "projects_chamae_desc": "SaaS multiempresa de chamada de atendimento por NFC/QR Code, com painel em tempo real, dashboard de métricas e geração automática das artes das plaquinhas.",
         "projects_jlvendas_desc": "Sistema de gestão de vendas, caixa, metas e bônus rodando em produção em lojas de varejo.",
 
         // Work
@@ -428,6 +441,17 @@ i18n.use(initReactI18next).init({
           "Hoje ele roda em produção nas lojas da família com dados reais de vendas todos os dias, e o próximo passo é transformá-lo em um produto vendido para outras lojas de varejo, com onboarding self-service, login por funcionária, validações no servidor via Cloud Functions e controle de assinatura.",
         "work_jlvendas_online_system": "Sistema (Online)",
         "work_jlvendas_client_only": "Sistema em produção, disponível apenas para as lojas.",
+
+        // Chamaê
+
+        "work_chamae_title": "Chamaê",
+        "work_chamae_description":
+          "O Chamaê é um SaaS que troca o \"levantar a mão para chamar o garçom\" por uma plaquinha na mesa. O cliente aproxima o celular (NFC) ou escaneia o QR Code, abre uma página sem precisar instalar nem fazer login e toca no que precisa: chamar garçom, pedir a conta, água ou outra ação que a empresa configurou. Pode também escrever uma mensagem, como \"mais ketchup\". A equipe recebe o chamado na hora no painel, com som.\n\n" +
+          "Serve para qualquer negócio com pontos de atendimento: restaurantes e bares (mesas), hospitais (leitos), hotéis (quartos), salões e clínicas (boxes, salas, consultórios). Os tipos de ponto são cadastráveis.\n\n" +
+          "O modelo de negócio: o cliente chega pela landing page, eu cadastro a empresa no admin com o limite de pontos do plano, o sistema gera as artes das plaquinhas de cada ponto já com número e QR Code, e eu produzo as plaquinhas, gravo o chip NFC e instalo. A receita vem de assinatura mensal por limite de pontos, mais a venda e instalação das plaquinhas.\n\n" +
+          "A empresa conta com painel de chamados em tempo real com alerta sonoro, gestão das mesas e das ações, pedido de plaquinha e um dashboard de Desempenho (tempo médio de atendimento, horários de pico, mapa de calor, ações e mesas que mais chamam). O admin tem visão geral de todos os clientes, cadastro de empresas e administradores, gestão de pontos e ações de qualquer empresa, geração das artes das plaquinhas (4 modelos, com e sem QR) e fila de pedidos de plaquinha.\n\n" +
+          "Na parte técnica, roda em Angular 20 (componentes standalone, signals, lazy loading) com Firebase Auth e Cloud Firestore, sem servidor próprio. Toda a segurança fica nas Firestore Security Rules, cobertas por 31 testes automatizados no emulador, que também fazem o anti-fraude: validam o limite de mesas do plano, o tempo de espera entre pedidos e a integridade de cada chamado.\n\n" +
+          "Foi pensado para ter custo baixo de Firestore com 10 mil ou mais usuários: a tela do cliente lê 1 único documento, atender é um lote de gravações sem nenhuma leitura, o dashboard usa resumos diários (no máximo 1 leitura por dia do período) e as imagens ficam em subcoleções que as listagens não carregam. QR Codes e artes são gerados em canvas no próprio navegador, e a hospedagem é na Vercel com domínio próprio e SEO.",
 
         // Work Experience
 

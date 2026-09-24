@@ -40,7 +40,7 @@ const Work = () => {
           </ListItem>
         </List>
 
-        <WorkImage src="/images/works/jloads-demo.gif" alt="JLoads" />
+        <WorkImage src="/images/works/jloads/demo.gif" alt="JLoads" />
       </Container>
     </Layout>
   );

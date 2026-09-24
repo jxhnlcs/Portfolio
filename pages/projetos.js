@@ -4,15 +4,16 @@ import Layout from '../components/layouts/article';
 import Section from '../components/section';
 import { WorkGridItem } from '../components/grid-item';
 
-import thumbDoopets from '../public/images/works/doopets_eyecatch.png';
-import thumbTecer from '../public/images/works/tecer_eyecatch.png';
-import thumbAcougue from '../public/images/works/acougue_eyecatch.png';
-import thumbProsel from '../public/images/works/prosel_eyecatch.png';
-import thumbBuzzu from '../public/images/works/buzzu_eyecatch.png';
-import thumbRekomendo from '../public/images/works/rekomendo_eyecatch.png';
-import thumbPlanejar from '../public/images/works/planejar-eyecatch.png';
-import thumbJloads from '../public/images/works/jloads_eyecatch.png';
-import thumbJlvendas from '../public/images/works/jlvendas_eyecatch.png';
+import thumbDoopets from '../public/images/works/doopets/eyecatch.png';
+import thumbTecer from '../public/images/works/tecer/eyecatch.png';
+import thumbAcougue from '../public/images/works/acougue/eyecatch.png';
+import thumbProsel from '../public/images/works/prosel/eyecatch.png';
+import thumbBuzzu from '../public/images/works/buzzu/eyecatch.png';
+import thumbRekomendo from '../public/images/works/rekomendo/eyecatch.png';
+import thumbPlanejar from '../public/images/works/planejar/eyecatch.png';
+import thumbJloads from '../public/images/works/jloads/eyecatch.png';
+import thumbJlvendas from '../public/images/works/jlvendas/eyecatch.png';
+import thumbChamae from '../public/images/works/chamae/eyecatch.png';
 
 const Projetos = () => {
   const { t } = useTranslation(); // Hook para tradução
@@ -25,6 +26,12 @@ const Projetos = () => {
         </Heading>
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          <Section>
+            <WorkGridItem id="chamae" title="Chamaê" thumbnail={thumbChamae} year="2026">
+              {t("projects_chamae_desc")}
+            </WorkGridItem>
+          </Section>
+
           <Section>
             <WorkGridItem id="planejar" title="Planejar Patrimonial" thumbnail={thumbPlanejar} year="2026">
               {t("projects_planejar_desc")}

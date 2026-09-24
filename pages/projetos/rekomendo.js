@@ -46,9 +46,9 @@ const Work = () => {
           </ListItem>
         </List>
 
-        <WorkImage src="/images/works/rekomendo-1.png" alt="Rekomendo" />
-        <WorkImage src="/images/works/rekomendo-2.png" alt="Rekomendo" />
-        <WorkImage src="/images/works/rekomendo-3.png" alt="Rekomendo" />
+        <WorkImage src="/images/works/rekomendo/01.png" alt="Rekomendo" />
+        <WorkImage src="/images/works/rekomendo/02.png" alt="Rekomendo" />
+        <WorkImage src="/images/works/rekomendo/03.png" alt="Rekomendo" />
       </Container>
     </Layout>
   );

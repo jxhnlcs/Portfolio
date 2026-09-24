@@ -35,7 +35,7 @@ const Work = () => {
           </ListItem>
         </List>
 
-        <WorkImage src="/images/works/planejar-eyecatch.png" alt="Planejar Patrimonial" />
+        <WorkImage src="/images/works/planejar/eyecatch.png" alt="Planejar Patrimonial" />
       </Container>
     </Layout>
   );

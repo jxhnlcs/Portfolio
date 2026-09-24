@@ -47,12 +47,12 @@ const Work = () => {
           </ListItem>
         </List>
 
-        <WorkImage src="/images/works/buzzu-1.png" alt="Buzzu" />
-        <WorkImage src="/images/works/buzzu-2.png" alt="Buzzu" />
-        <WorkImage src="/images/works/buzzu-3.png" alt="Buzzu" />
-        <WorkImage src="/images/works/buzzu-4.png" alt="Buzzu" />
-        <WorkImage src="/images/works/buzzu-5.png" alt="Buzzu" />
-        <WorkImage src="/images/works/buzzu-6.png" alt="Buzzu" />
+        <WorkImage src="/images/works/buzzu/01.png" alt="Buzzu" />
+        <WorkImage src="/images/works/buzzu/02.png" alt="Buzzu" />
+        <WorkImage src="/images/works/buzzu/03.png" alt="Buzzu" />
+        <WorkImage src="/images/works/buzzu/04.png" alt="Buzzu" />
+        <WorkImage src="/images/works/buzzu/05.png" alt="Buzzu" />
+        <WorkImage src="/images/works/buzzu/06.png" alt="Buzzu" />
       </Container>
     </Layout>
   );

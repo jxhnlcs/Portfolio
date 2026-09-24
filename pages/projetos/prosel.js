@@ -46,8 +46,8 @@ const Work = () => {
           </ListItem>
         </List>
 
-        <WorkImage src="/images/works/prosel-1.png" alt="prosel" />
-        <WorkImage src="/images/works/prosel-2.png" alt="prosel" />
+        <WorkImage src="/images/works/prosel/01.png" alt="prosel" />
+        <WorkImage src="/images/works/prosel/02.png" alt="prosel" />
       </Container>
     </Layout>
   );
