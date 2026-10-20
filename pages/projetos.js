@@ -14,6 +14,7 @@ import thumbPlanejar from '../public/images/works/planejar/eyecatch.png';
 import thumbJloads from '../public/images/works/jloads/eyecatch.png';
 import thumbJlvendas from '../public/images/works/jlvendas/eyecatch.png';
 import thumbChamae from '../public/images/works/chamae/eyecatch.png';
+import thumbPlaquinhai from '../public/images/works/plaquinhai/eyecatch.png';
 
 const Projetos = () => {
   const { t } = useTranslation(); // Hook para tradução
@@ -26,6 +27,12 @@ const Projetos = () => {
         </Heading>
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          <Section>
+            <WorkGridItem id="plaquinhai" title="plaquinhAI" thumbnail={thumbPlaquinhai} year="2026">
+              {t("projects_plaquinhai_desc")}
+            </WorkGridItem>
+          </Section>
+
           <Section>
             <WorkGridItem id="chamae" title="Chamaê" thumbnail={thumbChamae} year="2026">
               {t("projects_chamae_desc")}

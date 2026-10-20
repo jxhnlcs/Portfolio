@@ -77,6 +77,7 @@ i18n.use(initReactI18next).init({
         "projects_prosel_desc": "A system to facilitate and optimize the work of stretcher bearers responsible for transporting patients in a hospital.",
         "projects_buzzu_desc": "Public Transport App.",
         "projects_jloads_desc": "Open-source desktop app for downloading media through a local browser-based interface.",
+        "projects_plaquinhai_desc": "AI SaaS that designs NFC and QR Code plaque artwork for small businesses in one minute, with 3D preview, subscriptions and reseller plans.",
         "projects_chamae_desc": "Multi-tenant SaaS for calling service staff via NFC/QR Code, with a real-time panel, metrics dashboard, and automatic table sign artwork.",
         "projects_jlvendas_desc": "Sales, cash, goals, and bonus management system running in production at retail clothing stores.",
 
@@ -181,6 +182,15 @@ i18n.use(initReactI18next).init({
           "Businesses get a real-time call panel with sound alerts, table and action management, sign ordering, and a Performance dashboard (average response time, peak hours, heat map, top actions and tables). The admin area gives an overview of every client, company and admin registration, management of any company's points and actions, sign artwork generation (4 templates, with and without QR), and the sign order queue.\n\n" +
           "On the technical side, it runs on Angular 20 (standalone components, signals, lazy loading) with Firebase Auth and Cloud Firestore and no server of its own. All security lives in the Firestore Security Rules, covered by 31 automated tests on the emulator, which also enforce anti-fraud rules: the plan's table limit, the cooldown between calls, and the integrity of each call.\n\n" +
           "It was designed for low Firestore cost at 10,000+ users: the customer screen reads a single document, attending a call is a batch of writes with no reads, the dashboard uses daily summaries (at most 1 read per day in the period), and images live in subcollections that listings don't load. QR Codes and sign artwork are generated on canvas in the browser, and it's hosted on Vercel with a custom domain and SEO.",
+
+        // plaquinhAI
+
+        "work_plaquinhai_title": "plaquinhAI",
+        "work_plaquinhai_description":
+          "plaquinhAI is a SaaS that uses AI to design the artwork for NFC and QR Code plaques for small businesses. The customer uploads their logo, picks where the plaque leads (Google reviews, Instagram, WhatsApp, Pix, Wi-Fi, menu and more, 12 types in total) and in about a minute gets 3 unique designs made for their business, which they can preview in 3D before paying.\n\n" +
+          "The downloadable kit has 300 DPI artwork, a print-ready PDF with bleed and crop marks, and STL 3D models of the plaque and stand. There are three ways to pay: a one-time purchase; Link Vivo, a subscription with a permanent link whose destination can be changed without reprinting, with time-based schedules, pause and tap analytics (NFC vs QR, device, hour); and monthly plans with art credits for print shops and resellers.\n\n" +
+          "The AI designs each artwork as SVG and keeps a per-segment memory: styles that sell become references for the next customers in the same segment (barbershop, burger joint, salon…). Model routing picks the cheapest model that can handle each design and escalates only when needed, and every artwork is rendered in headless Chromium with an automatic check that the QR Code is still readable.\n\n" +
+          "On the technical side, it runs on Next.js 16 and TypeScript, deployed on Firebase App Hosting with Firestore and Storage. Payments go through Asaas (Pix, card and subscriptions) and are confirmed by webhook against the gateway API, with idempotency and transactions. Resilience comes from circuit breakers, retries, generation jobs that survive a dropped connection, and a daily AI spend cap. It also includes an admin dashboard (revenue, MRR, AI cost), LGPD cookie consent with GA4 and Meta Pixel, and unit and integration tests on the Firebase emulator.",
 
         // Work Experience
 
@@ -348,6 +358,7 @@ i18n.use(initReactI18next).init({
         "projects_prosel_desc": "Um sistema para facilitar e otimizar as atividades dos maqueiros, responsáveis pelo transporte dos pacientes em um hospital.",
         "projects_buzzu_desc": "Aplicativo de Transporte Público.",
         "projects_jloads_desc": "Aplicação desktop open source para download de mídias por uma interface web local.",
+        "projects_plaquinhai_desc": "SaaS com IA que cria a arte de plaquinhas NFC e QR Code para pequenos negócios em 1 minuto, com visualização 3D, assinaturas e planos para revenda.",
         "projects_chamae_desc": "SaaS multiempresa de chamada de atendimento por NFC/QR Code, com painel em tempo real, dashboard de métricas e geração automática das artes das plaquinhas.",
         "projects_jlvendas_desc": "Sistema de gestão de vendas, caixa, metas e bônus rodando em produção em lojas de varejo.",
 
@@ -452,6 +463,15 @@ i18n.use(initReactI18next).init({
           "A empresa conta com painel de chamados em tempo real com alerta sonoro, gestão das mesas e das ações, pedido de plaquinha e um dashboard de Desempenho (tempo médio de atendimento, horários de pico, mapa de calor, ações e mesas que mais chamam). O admin tem visão geral de todos os clientes, cadastro de empresas e administradores, gestão de pontos e ações de qualquer empresa, geração das artes das plaquinhas (4 modelos, com e sem QR) e fila de pedidos de plaquinha.\n\n" +
           "Na parte técnica, roda em Angular 20 (componentes standalone, signals, lazy loading) com Firebase Auth e Cloud Firestore, sem servidor próprio. Toda a segurança fica nas Firestore Security Rules, cobertas por 31 testes automatizados no emulador, que também fazem o anti-fraude: validam o limite de mesas do plano, o tempo de espera entre pedidos e a integridade de cada chamado.\n\n" +
           "Foi pensado para ter custo baixo de Firestore com 10 mil ou mais usuários: a tela do cliente lê 1 único documento, atender é um lote de gravações sem nenhuma leitura, o dashboard usa resumos diários (no máximo 1 leitura por dia do período) e as imagens ficam em subcoleções que as listagens não carregam. QR Codes e artes são gerados em canvas no próprio navegador, e a hospedagem é na Vercel com domínio próprio e SEO.",
+
+        // plaquinhAI
+
+        "work_plaquinhai_title": "plaquinhAI",
+        "work_plaquinhai_description":
+          "O plaquinhAI é um SaaS que usa inteligência artificial para criar a arte de plaquinhas de aproximação (NFC) e QR Code para pequenos negócios. O cliente envia a logo, escolhe para onde a plaquinha leva (avaliação no Google, Instagram, WhatsApp, Pix, Wi-Fi, cardápio e outros, 12 tipos no total) e em cerca de 1 minuto recebe 3 artes exclusivas, feitas para o negócio dele, que pode ver em 3D antes de pagar.\n\n" +
+          "O kit para baixar tem a arte em 300 DPI, o PDF para gráfica com sangria e marcas de corte e os modelos 3D (STL) da placa e do suporte. São três formas de pagar: compra única; o Link Vivo, assinatura com um link permanente cujo destino muda sem reimprimir, com agendamento por horário, pausa e estatísticas de toques (NFC × QR, aparelho, hora); e planos mensais com saldo de artes para gráficas e revendedores.\n\n" +
+          "A IA desenha cada arte em SVG e tem memória por segmento: os estilos que vendem viram referência para os próximos clientes do mesmo ramo (barbearia, hamburgueria, salão…). O roteamento de modelos escolhe o modelo mais barato que dá conta de cada arte e só usa o mais forte quando precisa, e toda arte é renderizada no Chromium com uma checagem automática de que o QR Code continua legível.\n\n" +
+          "Na parte técnica, roda em Next.js 16 e TypeScript, publicado no Firebase App Hosting com Firestore e Storage. Os pagamentos passam pela Asaas (Pix, cartão e assinaturas) e são confirmados por webhook consultando a API do gateway, com idempotência e transações. A resiliência vem de circuit breakers, novas tentativas, gerações que continuam se a internet cair e um teto diário de gasto com a IA. Tem ainda painel administrativo (receita, MRR, custo da IA), consentimento de cookies (LGPD) com GA4 e Meta Pixel, e testes unitários e de integração no emulador do Firebase.",
 
         // Work Experience
 
