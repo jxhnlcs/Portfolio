@@ -32,8 +32,8 @@ const Work = () => {
           </ListItem> */}
           <ListItem>
             <Meta>{t("work_rekomendo_online_system")}</Meta>
-            <Link href="https://rekomendo.com.br/landingpage">
-              https://rekomendo.com.br/landingpage <ExternalLinkIcon mx="2px" />
+            <Link href="https://rekomendo.com.br/">
+              https://rekomendo.com.br/ <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
