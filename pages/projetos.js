@@ -12,7 +12,7 @@ import thumbBuzzu from '../public/images/works/buzzu/eyecatch.png';
 import thumbRekomendo from '../public/images/works/rekomendo/eyecatch.png';
 import thumbPlanejar from '../public/images/works/planejar/eyecatch.png';
 import thumbJloads from '../public/images/works/jloads/eyecatch.png';
-import thumbJlvendas from '../public/images/works/jlvendas/eyecatch.png';
+import thumbSoma from '../public/images/works/soma/eyecatch.png';
 import thumbChamae from '../public/images/works/chamae/eyecatch.png';
 import thumbPlaquinhai from '../public/images/works/plaquinhai/eyecatch.png';
 
@@ -46,8 +46,8 @@ const Projetos = () => {
           </Section>
 
           <Section>
-            <WorkGridItem id="jlvendas" title="JL Vendas" thumbnail={thumbJlvendas} year="2026">
-              {t("projects_jlvendas_desc")}
+            <WorkGridItem id="soma" title="Soma" thumbnail={thumbSoma} year="2026">
+              {t("projects_soma_desc")}
             </WorkGridItem>
           </Section>
 

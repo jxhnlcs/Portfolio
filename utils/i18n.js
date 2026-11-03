@@ -79,7 +79,7 @@ i18n.use(initReactI18next).init({
         "projects_jloads_desc": "Open-source desktop app for downloading media through a local browser-based interface.",
         "projects_plaquinhai_desc": "AI SaaS that designs NFC and QR Code plaque artwork for small businesses in one minute, with 3D preview, subscriptions and reseller plans.",
         "projects_chamae_desc": "Multi-tenant SaaS for calling service staff via NFC/QR Code, with a real-time panel, metrics dashboard, and automatic table sign artwork.",
-        "projects_jlvendas_desc": "Sales, cash, goals, and bonus management system running in production at retail clothing stores.",
+        "projects_soma_desc": "Sales management SaaS for retail stores, with goals, cash register, inventory, and online subscription.",
 
         // Work
 
@@ -158,19 +158,17 @@ i18n.use(initReactI18next).init({
           "I implemented WebSocket communication to stream download progress, speed, and remaining time to the frontend, keeping the interface always in sync with what is happening in the backend.\n\n" +
           "Everything is packaged as a self-contained .jar that combines backend and frontend, so running the application is as simple as opening a single file locally.",
 
-        // JL Vendas
+        // Soma
 
-        "work_jlvendas_title": "JL Vendas",
-        "work_jlvendas_description":
-          "JL Vendas is a system built to measure for my parents' clothing stores. Before it, sales control was done on paper and spreadsheets: writing down what each employee sold, adding it up by hand to know the revenue, checking the cash register at the end of the day, and calculating goals and bonuses manually.\n\n" +
-          "The system replaced that routine: each sale is registered in seconds with employee, amount, and payment method; the daily total and the employee ranking update instantly; goals and bonuses are calculated automatically; and the cash register for in-cash sales always stays balanced.\n\n" +
-          "It is a multi-store and multi-company system, and the owner follows every store from the phone through an installable PWA, with a consolidated overview and the ability to filter a single store.\n\n" +
-          "Each store has screens for sales, employees, calendar, dashboard, history, audit trail, calculator, price tag printing, and settings. The audit trail records everything that changed: created, voided, and deleted sales, cash adjustments, and configuration changes, with author and date.\n\n" +
-          "Business rules are built into the system: automatic goal calculation per employee per day, a manual bonus per sale, and the distinction between voiding a sale (which stays in the history with a reason) and deleting it, always correcting the cash register in both cases.\n\n" +
-          "On the technical side, it runs on React 19 with Vite and Tailwind, uses Firebase Firestore and Auth with no server of its own, and relies on pre-calculated monthly summaries plus a local IndexedDB cache to cut read costs and work offline. Isolation between companies is enforced by Firestore Rules.\n\n" +
-          "It runs in production today at the family stores with real sales data every day, and the next step is turning it into a product sold to other retail stores, with self-service onboarding, per-employee login, server-side validation through Cloud Functions, and subscription management.",
-        "work_jlvendas_online_system": "Online System",
-        "work_jlvendas_client_only": "System in production, available only to the stores.",
+        "work_soma_title": "Soma",
+        "work_soma_description":
+          "Soma is a SaaS for retail stores that replaces notebooks and spreadsheets in the daily sales routine. It was born as JL Vendas, a system built to measure for my parents' clothing stores, where every sale was written down by hand and goals, bonuses, and the cash register were worked out at the end of the day. Today it is open to any store, with self-service signup and online subscription.\n\n" +
+          "Anyone can create an account in minutes and test it free for 7 days without a credit card, already with the number of stores they plan to use. A guided tour shows the main screens on the first access. After that, the price is per store per month, and the subscription follows along: creating a store above the contracted number shows the new price first, and deactivating a store removes it from the monthly fee.\n\n" +
+          "Each sale is registered in seconds, with employee, amount, and one or more payment methods. The daily summary, the cash register, goals, and bonuses update on their own, and the owner gets a push notification for every sale on the phone through an installable PWA. If the internet goes down, sales are saved on the device and sent when the connection returns.\n\n" +
+          "Each store has screens for sales, employees, calendar, dashboard, history with Excel and PDF export, audit trail, calculator, and settings, with its own logo and theme. Optional features can be turned on per store: inventory with barcodes and stock alerts, exchanges, discounts, bonuses, invoice tracking, and price tags with a barcode to scan at checkout. Owners with several stores also get a consolidated overview.\n\n" +
+          "Teams work with individual logins linked to each employee, with permissions per screen, and voiding a sale requires both permission and the owner's password. The audit trail records what changed, by whom, and when.\n\n" +
+          "On the technical side, it runs on React 19 with Vite and Tailwind, on Firebase Firestore, Auth, Cloud Functions, and Hosting. Billing goes through Asaas with Pix, boleto, or card, and is confirmed by webhook. Access rules are enforced on the server with Firestore Rules, sensitive operations go through Cloud Functions with rate limiting, and App Check monitors requests. Monthly summaries and a local cache keep database reads low and make offline work possible.\n\n" +
+          "It runs in production every day at the family stores, with real sales, and is open to new stores at somaloja.com.br.",
 
         // Chamaê
 
@@ -191,6 +189,8 @@ i18n.use(initReactI18next).init({
           "The downloadable kit has 300 DPI artwork, a print-ready PDF with bleed and crop marks, and STL 3D models of the plaque and stand. There are three ways to pay: a one-time purchase; Link Vivo, a subscription with a permanent link whose destination can be changed without reprinting, with time-based schedules, pause and tap analytics (NFC vs QR, device, hour); and monthly plans with art credits for print shops and resellers.\n\n" +
           "The AI designs each artwork as SVG and keeps a per-segment memory: styles that sell become references for the next customers in the same segment (barbershop, burger joint, salon…). Model routing picks the cheapest model that can handle each design and escalates only when needed, and every artwork is rendered in headless Chromium with an automatic check that the QR Code is still readable.\n\n" +
           "On the technical side, it runs on Next.js 16 and TypeScript, deployed on Firebase App Hosting with Firestore and Storage. Payments go through Asaas (Pix, card and subscriptions) and are confirmed by webhook against the gateway API, with idempotency and transactions. Resilience comes from circuit breakers, retries, generation jobs that survive a dropped connection, and a daily AI spend cap. It also includes an admin dashboard (revenue, MRR, AI cost), LGPD cookie consent with GA4 and Meta Pixel, and unit and integration tests on the Firebase emulator.",
+        "work_plaquinhai_offline_system": "System (Offline)",
+        "work_plaquinhai_offline_status": "The project is offline at the moment.",
 
         // Work Experience
 
@@ -360,7 +360,7 @@ i18n.use(initReactI18next).init({
         "projects_jloads_desc": "Aplicação desktop open source para download de mídias por uma interface web local.",
         "projects_plaquinhai_desc": "SaaS com IA que cria a arte de plaquinhas NFC e QR Code para pequenos negócios em 1 minuto, com visualização 3D, assinaturas e planos para revenda.",
         "projects_chamae_desc": "SaaS multiempresa de chamada de atendimento por NFC/QR Code, com painel em tempo real, dashboard de métricas e geração automática das artes das plaquinhas.",
-        "projects_jlvendas_desc": "Sistema de gestão de vendas, caixa, metas e bônus rodando em produção em lojas de varejo.",
+        "projects_soma_desc": "SaaS de gestão de vendas para lojas de varejo, com metas, caixa, estoque e assinatura online.",
 
         // Work
 
@@ -439,19 +439,17 @@ i18n.use(initReactI18next).init({
           "Implementei a comunicação via WebSocket para transmitir progresso, velocidade e tempo restante do download para o frontend, mantendo a interface sempre sincronizada com o que acontece no backend.\n\n" +
           "Tudo é empacotado em um .jar autônomo que combina backend e frontend, tornando a execução da aplicação tão simples quanto abrir um único arquivo localmente.",
 
-        // JL Vendas
+        // Soma
 
-        "work_jlvendas_title": "JL Vendas",
-        "work_jlvendas_description":
-          "O JL Vendas nasceu como um sistema feito sob medida para as lojas de roupa dos meus pais. Antes dele, o controle de vendas era feito em caderno e planilha: anotar o que cada funcionária vendeu, somar à mão para saber o faturamento, conferir o caixa no fim do expediente e calcular na ponta do lápis a meta e o bônus de cada uma.\n\n" +
-          "O sistema resolveu exatamente essa rotina: cada venda é registrada em segundos, com funcionária, valor e forma de pagamento; o total do dia e o ranking das funcionárias atualizam na hora; a meta e o bônus são calculados sozinhos; e o caixa das vendas à vista se mantém sempre batendo.\n\n" +
-          "É um sistema multi-loja e multi-empresa, e o dono acompanha todas as lojas pelo celular através de um PWA instalável, com visão geral consolidada e possibilidade de filtrar uma loja específica.\n\n" +
-          "Cada loja conta com telas de vendas, funcionárias, calendário, dashboard, histórico, auditoria, calculadora, impressão de etiquetas de preço e configurações. A trilha de auditoria registra tudo o que foi alterado: vendas criadas, anuladas e excluídas, ajustes de caixa e mudanças de configuração, com autor e data.\n\n" +
-          "As regras de negócio estão embutidas no sistema: cálculo automático da meta por funcionária por dia, bônus manual por venda e a diferença entre anular uma venda (que continua no histórico com o motivo) e excluí-la, sempre corrigindo o caixa nos dois casos.\n\n" +
-          "Na parte técnica, roda em React 19 com Vite e Tailwind, utiliza Firebase Firestore e Auth sem servidor próprio, e se apoia em resumos mensais pré-calculados e cache local em IndexedDB para reduzir o custo de leituras e funcionar offline. O isolamento entre empresas é garantido pelas Firestore Rules.\n\n" +
-          "Hoje ele roda em produção nas lojas da família com dados reais de vendas todos os dias, e o próximo passo é transformá-lo em um produto vendido para outras lojas de varejo, com onboarding self-service, login por funcionária, validações no servidor via Cloud Functions e controle de assinatura.",
-        "work_jlvendas_online_system": "Sistema (Online)",
-        "work_jlvendas_client_only": "Sistema em produção, disponível apenas para as lojas.",
+        "work_soma_title": "Soma",
+        "work_soma_description":
+          "O Soma é um SaaS para lojas de varejo que substitui o caderno e a planilha na rotina de vendas. Ele nasceu como JL Vendas, um sistema feito sob medida para as lojas de roupa dos meus pais, onde cada venda era anotada à mão e a meta, o bônus e o caixa eram calculados no fim do dia. Hoje está aberto para qualquer loja, com cadastro próprio e assinatura online.\n\n" +
+          "Qualquer pessoa cria a conta em poucos minutos e testa grátis por 7 dias, sem cartão, já com a quantidade de lojas que vai usar. No primeiro acesso, um tour guiado mostra as telas principais. Depois, a cobrança é por loja, por mês, e a assinatura acompanha o uso: criar uma loja além das contratadas mostra o novo valor antes de confirmar, e inativar uma loja tira ela da mensalidade.\n\n" +
+          "Cada venda é registrada em segundos, com a pessoa que vendeu, o valor e uma ou mais formas de pagamento. O resumo do dia, o caixa, a meta e o bônus se atualizam sozinhos, e o dono recebe uma notificação de cada venda no celular, pelo PWA instalável. Se a internet cair, a venda fica salva no aparelho e é enviada quando a conexão volta.\n\n" +
+          "Cada loja tem telas de vendas, equipe, calendário, dashboard, histórico com exportação em Excel e PDF, auditoria, calculadora e configurações, com logo e tema próprios. Funções opcionais são ligadas por loja: estoque com código de barras e alerta de estoque baixo, trocas, desconto, bônus, marcação de nota fiscal e etiquetas de preço com código de barras para bipar na venda. Quem tem várias lojas também conta com uma visão geral consolidada.\n\n" +
+          "A equipe trabalha com logins individuais, atrelados a cada pessoa, com permissões por tela, e anular uma venda exige a permissão e a senha do dono. A auditoria registra o que mudou, quem mudou e quando.\n\n" +
+          "Na parte técnica, roda em React 19 com Vite e Tailwind, sobre Firebase Firestore, Auth, Cloud Functions e Hosting. A cobrança passa pelo Asaas, com Pix, boleto ou cartão, e é confirmada por webhook. As regras de acesso valem no servidor, com Firestore Rules, as operações sensíveis passam por Cloud Functions com limite de requisições, e o App Check monitora as chamadas. Resumos mensais e cache local reduzem as leituras do banco e permitem trabalhar offline.\n\n" +
+          "Roda em produção todos os dias nas lojas da família, com vendas reais, e está aberto para novas lojas em somaloja.com.br.",
 
         // Chamaê
 
@@ -472,6 +470,8 @@ i18n.use(initReactI18next).init({
           "O kit para baixar tem a arte em 300 DPI, o PDF para gráfica com sangria e marcas de corte e os modelos 3D (STL) da placa e do suporte. São três formas de pagar: compra única; o Link Vivo, assinatura com um link permanente cujo destino muda sem reimprimir, com agendamento por horário, pausa e estatísticas de toques (NFC × QR, aparelho, hora); e planos mensais com saldo de artes para gráficas e revendedores.\n\n" +
           "A IA desenha cada arte em SVG e tem memória por segmento: os estilos que vendem viram referência para os próximos clientes do mesmo ramo (barbearia, hamburgueria, salão…). O roteamento de modelos escolhe o modelo mais barato que dá conta de cada arte e só usa o mais forte quando precisa, e toda arte é renderizada no Chromium com uma checagem automática de que o QR Code continua legível.\n\n" +
           "Na parte técnica, roda em Next.js 16 e TypeScript, publicado no Firebase App Hosting com Firestore e Storage. Os pagamentos passam pela Asaas (Pix, cartão e assinaturas) e são confirmados por webhook consultando a API do gateway, com idempotência e transações. A resiliência vem de circuit breakers, novas tentativas, gerações que continuam se a internet cair e um teto diário de gasto com a IA. Tem ainda painel administrativo (receita, MRR, custo da IA), consentimento de cookies (LGPD) com GA4 e Meta Pixel, e testes unitários e de integração no emulador do Firebase.",
+        "work_plaquinhai_offline_system": "Sistema (Offline)",
+        "work_plaquinhai_offline_status": "O projeto está fora do ar no momento.",
 
         // Work Experience
 
