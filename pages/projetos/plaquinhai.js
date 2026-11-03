@@ -2,11 +2,9 @@ import { useTranslation } from 'react-i18next';
 import {
   Container,
   Badge,
-  Link,
   List,
   ListItem,
 } from '@chakra-ui/react';
-import { ExternalLinkIcon } from '@chakra-ui/icons';
 import { Title, WorkImage, Meta } from '../../components/work';
 import P from '../../components/paragraph';
 import Layout from '../../components/layouts/article';
@@ -24,10 +22,8 @@ const Work = () => {
 
         <List ml={4} my={4}>
           <ListItem>
-            <Meta>{t('website')}</Meta>
-            <Link href="https://plaquinhai.com.br" target="_blank">
-              https://plaquinhai.com.br <ExternalLinkIcon mx="2px" />
-            </Link>
+            <Meta>{t('work_plaquinhai_offline_system')}</Meta>
+            <span>{t('work_plaquinhai_offline_status')}</span>
           </ListItem>
           <ListItem>
             <Meta>{t('platforms')}</Meta>
